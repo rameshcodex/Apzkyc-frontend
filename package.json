@@ -2,6 +2,7 @@
   "name": "newx",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://13.61.165.12",
   "dependencies": {
     "@aws-amplify/ui-react": "^6.2.0",
     "@aws-amplify/ui-react-liveness": "^3.1.4",
