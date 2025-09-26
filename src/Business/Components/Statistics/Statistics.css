@@ -1,0 +1,237 @@
+.statistic-tab .MuiBox-root {
+    padding: 0 !important;
+}
+
+.statistic-tab {
+    margin-top: 40px;
+}
+
+.statistic-body .statistic-tab .Mui-checked+.MuiSwitch-track {
+    background-color: #1976d2 !important;
+}
+
+.statistic-body .bor .MuiBox-root {
+    min-width: 54px;
+}
+
+.statistic-body .margin-top.bor .MuiPaper-root {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.margin-top.bor table thead tr th,
+.inner-thead-th {
+    border-bottom: 0 !important;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.margin-top.bors {
+    border-bottom: 0 !important;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.statistic-bold-td {
+    color: #afa9a9;
+    font-family: Inter !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 30px !important;
+    margin-top: 10px;
+}
+
+.check_app_first_child {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+.check_app_first_child::after {
+    position: absolute;
+    content: "";
+    background: #E1E5EA;
+    width: 1px;
+    height: 177px;
+    bottom: -7px;
+    right: -42px;
+}
+
+.emptyChartDiv {
+    height: 192px;
+}
+
+.emptyChartOuter {
+    /* padding: 16px; */
+    margin-top: 40px;
+}
+
+.chartAction button {
+    padding: 0px;
+    min-width: 34px !important;
+}
+
+.csvDownloadBtn {
+    border-radius: 4px !important;
+    border: 1px solid #E1E5EA !important;
+    background: #FFF !important;
+    color: #373D4D !important;
+    text-align: center !important;
+    font-family: Inter !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+    padding: 10px !important;
+    white-space: nowrap;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.total-count {
+    border-radius: 4px;
+    border: 1px solid #25B793;
+    background: #FFF;
+    width: fit-content;
+    padding: 5px;
+    color: #212736;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.nodata {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.analytic-head-theme {
+    color: var(--Primary-Primary, #009FF5);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 9px;
+    text-decoration-line: underline;
+}
+
+.analytic-head span {
+    color: #586073;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration-line: none;
+}
+
+.analytics-tab .emptyChartDiv {
+    height: 288px;
+}
+
+.bdr-blue {
+    border: 1px solid var(--Primary-Primary, #009FF5);
+}
+
+.bdr-red {
+    border: 1px solid #F5222D;
+}
+
+.bdr-yellow {
+    border: 1px solid #FAAD14;
+}
+
+.bdr-violet {
+    border: 1px solid #9254DE;
+}
+
+.nodata div {
+    color: #212736;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+}
+
+.nodata span {
+    color: #373D4D;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.copy {
+    padding: 12px !important;
+    min-width: 0 !important;
+}
+
+.copy svg {
+    font-size: 18px;
+}
+
+.statistic-body .bor {
+    padding-left: 17px;
+}
+
+.statistic-body .action-tab button {
+    color: #373D4D;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.statistic-body .action-tab button.Mui-selected {
+    color: #fff;
+}
+
+.statistic-body .margin-top.bor {
+    padding-left: 0;
+}
+
+.statistic-body .margin-top .display-2 {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.analytics-tab .emptyChartDiv .display-1 {
+    /* flex-wrap: wrap; */
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.stat-cardmain {
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px 15px;
+    background-color: rgb(16, 31, 46);
+    color: #fff;
+    width: 320px;
+    height: 160px;
+}
+
+.bxshade2 {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 12px;
+    padding: 15px 20px;
+}

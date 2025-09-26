@@ -1,0 +1,256 @@
+.MuiPaper-root {
+    font-family: var(--font-family) !important;
+}
+
+/* .clientList-body{
+    margin-top: 20px;
+    margin-right: 58px;
+} */
+.add-list-btn {
+    border-radius: 3.61px !important;
+    background: var(--Primary-Primary, #009FF5) !important;
+    color: #FFF !important;
+}
+
+.cmn-btn {
+    text-align: center;
+    font-size: 12.636px !important;
+    font-weight: 500 !important;
+    line-height: 21.662px !important;
+    text-transform: math-auto !important;
+}
+
+.import-btn {
+    color: #373D4D !important;
+    border-radius: 3.61px !important;
+    border: 0.903px solid #E1E5EA !important;
+    background: #FFF !important;
+}
+
+.action-btn-bdr {
+    border-radius: 3.61px;
+    border: 0.903px solid #E1E5EA;
+    background: #FFF;
+    /* padding: 7.22px 8.124px 7.221px 8.123px; */
+    text-transform: capitalize !important; 
+}
+
+
+.action-btn-flex button {
+    padding: 0;
+    min-width: auto;
+    color: rgba(55, 61, 77, 1);
+}
+
+.action-btn-flex button svg {
+    font-size: 30px;
+}
+
+.item-list-table table thead tr {
+    /* border-radius: 3.61px; */
+    /* background: #F6F7F9; */
+    background: rgba(65, 73, 91, 0.07);
+}
+
+.item-list-table table thead tr th:last-child {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.item-list-table table thead tr th:first-child {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.item-list-table table thead tr th,
+.item-list-table table tbody tr td {
+    border-bottom: 0;
+    font-family: var(--font-family);
+}
+
+.item-list-table table thead tr th,
+.table-bold-item {
+    color: #373D4D !important;
+    font-size: 12.636px !important;
+    font-weight: 600 !important;
+    line-height: 21.662px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.item-list-table table tbody tr td {
+    color: #212736;
+    font-size: 11.733px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.formControl-flex .MuiFormGroup-root {
+    display: flex;
+    flex-direction: row;
+}
+
+.createList-popup .MuiDialogContent-root {
+    padding-top: 0 !important;
+    padding: 0 25px 20px !important;
+}
+
+.createList-popup .MuiDialogActions-root {
+    justify-content: flex-start;
+    padding: 0 30px 20px !important;
+}
+
+.createList-popup .MuiDialogTitle-root {
+    padding: 16px 25px !important;
+    color: #333946;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.createList-popup .MuiPaper-root {
+    border-radius: 15px;
+}
+
+.createList-popup .email-field fieldset,
+.createList-popup .email-field fieldset:focus,
+.createList-popup .email-field fieldset:focus-visible {
+    border-radius: 5px !important;
+    border: 2px solid #E4E8EC !important;
+}
+
+.createList-popup .email-field input::placeholder,
+.select-item-list input {
+    color: #ABB4C4 !important;
+    font-family: Poppins !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.entry label {
+    color: #ABB4C4;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.entry label span {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disabled {
+    opacity: 0.3;
+}
+
+.action-btn {
+    border-radius: 5px !important;
+    background: #2E74FF !important;
+    cursor: not-allowed !important;
+    text-transform: capitalize !important;
+    pointer-events: auto !important;
+}
+
+.createList-popup .email-field fieldset:focus-visible,
+.createList-popup .email-field fieldset:focus-visible {
+    border: 1px solid #1976d2 !important;
+    border-radius: 7px !important;
+    outline: 0 !important;
+}
+
+.close-svg {
+    width: 21px !important;
+}
+
+.select-item-list input {
+    opacity: 1 !important;
+    height: 100% !important;
+    padding-left: 10px;
+    border: 0 !important;
+}
+
+.select-item-list input::placeholder {
+    padding-left: 10px;
+}
+
+.select-item-list input:focus {
+    border: 2px solid #009ff5;
+}
+
+.createList-popup .MuiFormControl-root {
+    margin: 0;
+}
+
+.select-item-list.email-field,
+.email-field .MuiInputBase-root {
+    height: 39px;
+    margin-bottom: 13px;
+}
+
+.clientList-body .Mui-focused fieldset{
+    border: 1px solid #1976d2;
+}
+
+.clientList-body .MuiSelect-outlined {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.import-popup label {
+    color: #4B505F;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.upload-btn {
+    box-shadow: none !important;
+    border-radius: 5px !important;
+    border: 2px solid #E4E8EC !important;
+    background: transparent !important;
+    color: #4B505F !important;
+    font-family: Poppins !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    gap: 10px !important;
+}
+
+.upload-label {
+    width: fit-content;
+}
+
+.import-info {
+    color: #B3B7C5 !important;
+    font-family: Poppins !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+.add-false-content {
+    text-align: center;
+}
+
+.user-body-div1 {
+    display: flex;
+    gap: 10%;
+
+}
+/* .clo_seicon{
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+}
+@media (max-width:991px) {
+    .clo_seicon svg{
+       width: 10px;
+       height: auto;
+    }
+} */
+ @media (max-width:991px) {
+    .icon_close{
+        position: absolute;
+        right: -10px;
+        top: -11px;
+    }
+ }

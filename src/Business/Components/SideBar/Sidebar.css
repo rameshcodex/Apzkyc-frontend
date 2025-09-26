@@ -1,0 +1,68 @@
+.apxlogo img {
+    width: 35px;
+    height: 35px;
+}
+
+.drawhead {
+    justify-content: var(--justi-c) !important;
+    background: #E7EAEE !important;
+}
+
+.routetext span {
+    color: #373D4D;
+    /* font-family: Inter; */
+    font-size: var(--font-14);
+    font-style: normal;
+    font-weight: var(--weight-600);
+    line-height: 24px;
+    text-wrap: wrap;
+    /* 171.429% */
+}
+
+.routelist {
+    margin: 15px 0;
+}
+
+a.active .icobtn {
+    border-bottom: 4px solid var(--color-Blue) !important;
+    background: #f0f1f3;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a.active svg path {
+    fill: '009FF5' !important
+}
+
+.sidetoolbar {
+    background: #E7EAEE !important;
+    box-shadow: none !important;
+}
+
+.drawermain .MuiPaper-root {
+    border-right: unset !important;
+}
+
+.prodtin {
+    color: #A6AFBE;
+    /* font-family: Inter; */
+    font-size: var(--font-14);
+    font-style: normal;
+    font-weight: var(--weight-400);
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.hlp {
+    color: #373D4D;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: var(--font-14);
+    font-style: normal;
+    font-weight: var(--weight-600);
+    line-height: 24px;
+    /* 171.429% */
+}

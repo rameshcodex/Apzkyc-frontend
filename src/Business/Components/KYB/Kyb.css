@@ -1,0 +1,634 @@
+.steps {
+    position: relative;
+}
+
+.steps:before {
+    top: 125px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 2px;
+    background-color: #009FF5;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline {
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.timeline .timeline-box {
+    position: relative;
+    float: left;
+    clear: left;
+    width: 45%;
+    margin: 1em 2.5%;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    /* width: 800px; */
+    padding: 25px;
+    background: #ebebebf5;
+    border-radius: 15px;
+    z-index: 15;
+}
+
+.timeline .timeline-box .timeline-title {
+    color: #3c3c3c;
+    font-weight: 700;
+    font-size: 1em;
+    float: left;
+    padding-left: 25px;
+    padding-top: 8px;
+}
+
+.timeline .timeline-box .timeline-details {
+    clear: both;
+    padding-top: 5px;
+}
+
+.timeline .timeline-box .spans {
+    position: absolute;
+    top: -15px;
+    right: 24px;
+    font-size: 8em;
+    font-weight: 700;
+    color: #009FF5;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+@media all and (max-width: 991.98px) {
+    .timeline .timeline-box {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.timeline .timeline-box:hover:after {
+    background: #009FF5;
+}
+
+@media all and (min-width: 650px) {
+    .timeline .timeline-box:after {
+        display: block;
+        content: ' ';
+        height: 9px;
+        width: 9px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        right: -6.55%;
+        top: 1.5em;
+        border: 2px solid #009FF5;
+    }
+}
+
+.timeline .timeline-box:first-child {
+    margin-bottom: 2.5em;
+}
+
+.timeline .timeline-box:nth-of-type(1n):before {
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    display: inline-block;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #f8f8f8;
+    border-right: 0 solid #f8f8f8;
+    border-bottom: 10px solid transparent;
+    content: " ";
+}
+
+.timeline .timeline-box:nth-of-type(2n) {
+    float: right;
+    clear: right;
+}
+
+.timeline .timeline-box:nth-of-type(2n):before {
+    right: auto;
+    left: -10px;
+    position: absolute;
+    top: 15px;
+    display: inline-block;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #f8f8f8;
+    border-left: 0 solid #f8f8f8;
+    border-bottom: 10px solid transparent;
+    content: " ";
+}
+
+@media all and (min-width: 600px) {
+    .timeline .timeline-box:nth-of-type(2n) {
+        margin-top: 3em;
+    }
+}
+
+.timeline .timeline-box:nth-child(2n):after {
+    left: -6.5%;
+    right: auto;
+}
+
+.timeline-box:hover,
+.timeline-box:focus {
+    transform: translate(0, -5px);
+    -webkit-transform: translate(0, -5px);
+    -ms-transform: translate(0, -5px);
+}
+
+.timeline-box:hover,
+.timeline-box:focus {
+    -webkit-box-shadow: 0px 3px 0px 0px #009FF5;
+    -moz-box-shadow: 0px 3px 0px 0px #009FF5;
+    box-shadow: 0px 3px 0px 0px #009FF5;
+}
+
+.timeline-box {
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.steps-area {
+    padding: 90px 0;
+}
+
+
+/* From Uiverse.io by leerepublik */
+.input .MuiInputBase-root {
+    width: 100%;
+    max-width: 220px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.input .MuiInputBase-root:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+.input .MuiInputBase-root:active {
+    transform: scale(0.95);
+}
+
+.input .MuiInputBase-root:focus {
+    border: 2px solid grey;
+}
+
+.main-layer {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    width: 800px;
+}
+
+.input fieldset,
+.input2 fieldset {
+    outline: none;
+    border: none;
+}
+
+.input2.MuiFormControl-root {
+    /* width: 100%; */
+    /* max-width: 220px; */
+    /* height: 45px; */
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+
+/* From Uiverse.io by 3bdel3ziz-T */
+.container2 {
+    --transition: 350ms;
+    --folder-W: 120px;
+    --folder-H: 80px;
+    display: flex;
+    width: 250px;
+    /* margin-top: 30px; */
+    margin: 25px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    height: calc(var(--folder-H) * 1.7);
+    position: relative;
+}
+
+.folder {
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 60px);
+    animation: float 2.5s infinite ease-in-out;
+    transition: transform var(--transition) ease;
+}
+
+.folder:hover {
+    transform: scale(1.05);
+}
+
+.folder .front-side,
+.folder .back-side {
+    position: absolute;
+    transition: transform var(--transition);
+    transform-origin: bottom center;
+}
+
+.folder .back-side::before,
+.folder .back-side::after {
+    content: "";
+    display: block;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 0;
+    width: var(--folder-W);
+    height: var(--folder-H);
+    position: absolute;
+    transform-origin: bottom center;
+    border-radius: 15px;
+    transition: transform 350ms;
+    z-index: 0;
+}
+
+.container2:hover .back-side::before {
+    transform: rotateX(-5deg) skewX(5deg);
+}
+
+.container2:hover .back-side::after {
+    transform: rotateX(-15deg) skewX(12deg);
+}
+
+.folder .front-side {
+    z-index: 1;
+}
+
+.container2:hover .front-side {
+    transform: rotateX(-40deg) skewX(15deg);
+}
+
+.folder .tip {
+    background: linear-gradient(135deg, #ff9a56, #ff6f56);
+    width: 80px;
+    height: 20px;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -10px;
+    z-index: 2;
+}
+
+.folder .cover {
+    background: linear-gradient(135deg, #ffe563, #ffc663);
+    width: var(--folder-W);
+    height: var(--folder-H);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.custom-file-upload {
+    font-size: 1.1em;
+    color: #ffffff;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background var(--transition) ease;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 35px;
+    position: relative;
+}
+
+.custom-file-upload:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.Head-kyb {
+    margin-bottom: 15px;
+    font-size: clamp(30px, 5vw, 20px);
+}
+
+/* From Uiverse.io by Shoh2008 */
+.loader {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    background: #FFF;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg) translate(30%, 40%);
+    background: #ff9371;
+    box-shadow: 32px -34px 0 5px #ff3d00;
+    animation: slide 2s infinite ease-in-out alternate;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff3d00;
+    transform: rotate(0deg);
+    transform-origin: 35px 145px;
+    animation: rotate 2s infinite ease-in-out;
+}
+
+@keyframes slide {
+
+    0%,
+    100% {
+        bottom: -35px
+    }
+
+    25%,
+    75% {
+        bottom: -2px
+    }
+
+    20%,
+    80% {
+        bottom: 2px
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-15deg)
+    }
+
+    25%,
+    75% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(25deg)
+    }
+}
+
+.imgurl {
+    width: 250px;
+    height: 250px;
+    margin-top: 15px;
+    margin: auto;
+}
+
+/* From Uiverse.io by Peary74 */
+.save button {
+    font-family: inherit;
+    font-size: 17px;
+    background: #212121;
+    margin: auto;
+    /* margin-left: auto; */
+    text-transform: capitalize;
+    color: white;
+    fill: rgb(155, 153, 153);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-weight: 1000;
+}
+
+.save button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.save button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.save button:hover {
+    background: #000;
+}
+
+.save button:hover .svg-wrapper {
+    transform: scale(1.25);
+    transition: 0.5s linear;
+}
+
+.save button:hover svg {
+    transform: translateX(1.2em) scale(1.1);
+    fill: #fff;
+}
+
+.save button:hover span {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+.save button:active {
+    transform: scale(0.95);
+}
+
+/* From Uiverse.io by kennyotsu */
+.card2 {
+    /* color used to softly clip top and bottom of the .words container */
+    /* --bg-color: #212121; */
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+}
+
+.card2 p {
+    margin: 0;
+}
+
+.loader2 {
+    color: rgb(82, 75, 75);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 100%;
+    padding: 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.words {
+    overflow: hidden;
+    position: relative;
+}
+
+.words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(var(--bg-color) 10%,
+            transparent 30%,
+            transparent 70%,
+            var(--bg-color) 90%);
+    z-index: 20;
+}
+
+.word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #009FF5;
+    animation: spin_4991 4s infinite;
+}
+
+@keyframes spin_4991 {
+    10% {
+        -webkit-transform: translateY(-102%);
+        transform: translateY(-102%);
+    }
+
+    25% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    35% {
+        -webkit-transform: translateY(-202%);
+        transform: translateY(-202%);
+    }
+
+    50% {
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+    }
+
+    60% {
+        -webkit-transform: translateY(-302%);
+        transform: translateY(-302%);
+    }
+
+    75% {
+        -webkit-transform: translateY(-300%);
+        transform: translateY(-300%);
+    }
+
+    85% {
+        -webkit-transform: translateY(-402%);
+        transform: translateY(-402%);
+    }
+
+    100% {
+        -webkit-transform: translateY(-400%);
+        transform: translateY(-400%);
+    }
+}
+
+/* .save {
+    position: sticky;
+    bottom: 5%;
+    right: 5%;
+} */
+
+.imgurl-list {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: fill !important;
+}
+
+.verififed-det {
+    background-color: #ebebebf5;
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 15px;
+}
+
+/* .pdfviewer small,.pdfviewer .icon{
+    display: none;
+} */
+
+.kyb-new-banner {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px 25px;
+}
+
+.kyb-txtnew .MuiFormControl-root,
+.kyb-txtnew .MuiInputBase-root {
+    /* padding: 12px; */
+    border-radius: 8px;
+}
+
+.upld-brd {
+    border: 2.5px dashed #000;
+    border-radius: 12px;
+    height: 350px;
+    position: relative;
+}
+
+.upld-brd:hover {
+    border-color: #009FF5 !important;
+}
+
+.upld-img img {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+/* .upld-brd:hover .upld-btn {
+    display: block !important;
+} */
+
+.clr-red {
+    color: red !important;
+}

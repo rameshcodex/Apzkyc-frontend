@@ -1,0 +1,453 @@
+.MuiPaper-root {
+    font-family: var(--font-family) !important;
+}
+
+/* .clientList-body{
+    margin-top: 20px;
+    margin-right: 58px;
+} */
+.add-list-btn {
+    border-radius: 3.61px !important;
+    background: var(--Primary-Primary, #009FF5) !important;
+    color: #FFF !important;
+}
+
+.cmn-btn {
+    text-align: center;
+    font-size: 12.636px !important;
+    font-weight: 500 !important;
+    line-height: 21.662px !important;
+    text-transform: math-auto !important;
+}
+.select-item-list.email-field, .email-field .MuiInputBase-root {
+    height: 39px;
+    margin-bottom: 0 !important;
+}
+.import-btn {
+    color: #373D4D !important;
+    border-radius: 3.61px !important;
+    border: 0.903px solid #E1E5EA !important;
+    background: #FFF !important;
+}
+
+.action-btn-bdr {
+    border-radius: 3.61px;
+    border: 0.903px solid #E1E5EA;
+    background: #FFF;
+    /* padding: 7.22px 8.124px 7.221px 8.123px; */
+    text-transform: capitalize !important;
+}
+
+.action-btn-flex button {
+    padding: 0;
+    min-width: auto;
+    color: rgba(55, 61, 77, 1);
+}
+
+.action-btn-flex button svg {
+    font-size: 30px;
+}
+
+.item-list-table table thead tr {
+    /* border-radius: 3.61px; */
+    /* background: #F6F7F9; */
+    background: rgba(65, 73, 91, 0.07);
+}
+
+.item-list-table table thead tr th:last-child {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.item-list-table table thead tr th:first-child {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.item-list-table table thead tr th,
+.item-list-table table tbody tr td {
+    border-bottom: 0;
+    font-family: var(--font-family);
+}
+
+.item-list-table table thead tr th,
+.table-bold-item {
+    color: #373D4D !important;
+    font-size: 12.636px !important;
+    font-weight: 600 !important;
+    line-height: 21.662px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.item-list-table table tbody tr td {
+    color: #212736;
+    font-size: 11.733px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.formControl-flex .MuiFormGroup-root {
+    display: flex;
+    flex-direction: row;
+}
+
+.createList-popup .MuiDialogContent-root {
+    padding-top: 0 !important;
+    padding: 0 25px 20px !important;
+}
+
+.createList-popup .MuiDialogActions-root {
+    justify-content: flex-start;
+    padding: 0 30px 20px !important;
+}
+
+.createList-popup .MuiDialogTitle-root {
+    padding: 16px 25px !important;
+    color: #333946;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.createList-popup .MuiPaper-root {
+    border-radius: 15px;
+}
+
+.createList-popup .email-field fieldset,
+.createList-popup .email-field fieldset:focus,
+.createList-popup .email-field fieldset:focus-visible {
+    border-radius: 5px !important;
+    border: 2px solid #E4E8EC !important;
+}
+
+.createList-popup .email-field input::placeholder,
+.select-item-list input {
+    color: #ABB4C4 !important;
+    font-family: Poppins !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.entry label {
+    color: #ABB4C4;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.entry label span {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disabled {
+    opacity: 0.3;
+}
+
+.action-btn {
+    border-radius: 5px !important;
+    background: #2E74FF !important;
+    cursor: not-allowed !important;
+    text-transform: capitalize !important;
+    pointer-events: auto !important;
+}
+
+.createList-popup .email-field fieldset:focus-visible,
+.createList-popup .email-field fieldset:focus-visible {
+    border: 1px solid #1976d2 !important;
+    border-radius: 7px !important;
+    outline: 0 !important;
+}
+
+.close-svg {
+    width: 21px !important;
+}
+
+.select-item-list input {
+    opacity: 1 !important;
+    height: 100% !important;
+    padding-left: 10px;
+    border: 0 !important;
+}
+
+.select-item-list input::placeholder {
+    padding-left: 10px;
+}
+
+.select-item-list input:focus {
+    border: 2px solid #009ff5;
+}
+
+.createList-popup .MuiFormControl-root {
+    margin: 0;
+}
+
+.select-item-list.email-field,
+.email-field .MuiInputBase-root {
+    height: 39px;
+    margin-bottom: 13px;
+}
+
+.clientList-body .Mui-focused fieldset{
+    border: 1px solid #1976d2 ;
+}
+
+.clientList-body .MuiSelect-outlined {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.import-popup label {
+    color: #4B505F;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.upload-btn {
+    box-shadow: none !important;
+    border-radius: 5px !important;
+    border: 2px solid #E4E8EC !important;
+    background: transparent !important;
+    color: #4B505F !important;
+    font-family: Poppins !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    gap: 10px !important;
+}
+
+.upload-label {
+    width: fit-content;
+}
+
+.import-info {
+    color: #B3B7C5 !important;
+    font-family: Poppins !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+.add-false-content {
+    text-align: center;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+section.invoice-sec {
+    /* padding: 60px 0; */
+    color: #000000;
+    /* width: 50%; */
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+section.invoice-sec .pad{
+    padding: 20px;
+}
+
+section.invoice-sec p {
+    margin-bottom: 0px !important;
+    font-size: 14px;
+}
+
+section.invoice-sec .invoice-title {
+    position: relative;
+    padding: 20px;
+    background: #009ff5;
+    position: fixed;
+    width: calc(100% + 0px);
+    left: 0px;
+    right: 0;
+    top: 0;
+}
+section.invoice-sec .invoice-title svg{
+    filter: invert(1);
+    top: 6px;
+    right: 15px;
+}
+section.invoice-sec .invoice-title .h2tag {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+/* section.invoice-sec .invoice-title::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    border: 1px solid #00000040;
+    width: 800px;
+    height: fit-content;
+} */
+section.invoice-sec .flx_inv{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #949597;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+section.invoice-sec h5{
+    font-size: 18px;
+    font-weight: 500;
+}
+section.invoice-sec h6{
+    font-size: 16px; 
+}
+section.invoice-sec .h2tag{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.details-blocks{
+    padding-top: 10px;
+    border-top:1px solid #837c7c;
+}
+.details-blocks table thead tr th {
+    border: none;
+}
+
+.details-blocks table {
+    width: 100%;
+}
+
+.details-blocks table thead tr th:nth-child(2),
+.details-blocks table tbody tr td:nth-child(2) {
+    text-align: right;
+}
+
+.details-blocks table thead tr th {
+    font-size: 16px;
+    width: 50%;
+}
+
+.details-blocks table tbody {
+    border: #fff;
+}
+.clo_se{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+/* .details-blocks,
+.payment-info,
+.powered-by {
+    margin-top: clamp(30px, 5vw, 60px);
+} */
+.invoice-table{
+    overflow-x: auto;
+}
+.in_pad{
+    padding: 15px;
+}
+.details-blocK p span,
+.payment-info-block p {
+    font-weight: 600 !important;
+}
+
+.details-blocK p,
+.payment-info-block p {
+    line-height: 1.6;
+}
+
+.payment-info-block p {
+    font-size: 14px !important;
+}
+
+.payment-info-block p span.payment-method-img {
+    margin-right: 15px;
+}
+
+.payment-info-block {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.payment-info-block p:first-child,
+.powered-by-content p:first-child,
+.invoice-table table th span,
+.invoice-table table td span {
+    color: #0047ff;
+}
+.invoice-table table th:first-child{
+    padding-left: 0;
+}
+
+.payment-info-right p:nth-child(2),
+.payment-info-block p:first-child {
+    width: 30%;
+}
+
+.payment-info-block p:nth-child(3) {
+    color: #5d5e60;
+}
+
+.invoice-table {
+    margin-top: 30px;
+}
+
+.invoice-table table {
+    border-collapse: separate;
+    border-spacing: 0 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.invoice-table table th {
+    padding: 3px;
+    border-bottom:1px solid #837c7c;
+    text-transform: uppercase;
+}
+
+.invoice-table th .invoice-table-head {
+    padding: 15px 2px;
+    padding-top: 0;
+    text-align: start;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.invoice-table tbody {
+    margin-top: 20px;
+}
+
+.invoice-table tbody td {
+    padding: 0px 18px;
+    border-bottom: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.invoice-table tbody td:last-child {
+    color: #5d5e60;
+}
+
+.invoice-table table th .form-select {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    /* background-image: url(./img/drop-down-arrow.svg); */
+    background-size: 32px 16px;
+}
+
+.invoice-table table th .form-select {
+    padding: 0 !important;
+}

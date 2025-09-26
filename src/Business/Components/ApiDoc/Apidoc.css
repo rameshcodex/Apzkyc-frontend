@@ -1,0 +1,266 @@
+.vibter.x2 .MuiTabs-flexContainer {
+    /* width: 200px; */
+    /* word-break: break-all; */
+}
+
+.vibter.x2 button,
+.vibter.x2 button.MuiButtonBase-root.Mui-selected {
+    white-space: break-spaces !important;
+    text-align: left !important;
+}
+
+
+
+/* From Uiverse.io by NlghtM4re */
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 120px;
+}
+
+.window {
+
+    height: 85vh;
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.window-title {
+    height: 45px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.window-title p {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.window-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.window-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.window-button.cloose {
+    background-color: #f00;
+}
+
+.window-button.cloose:hover {
+    background-color: rgb(182, 2, 2);
+    cursor: pointer;
+}
+
+.window-button.reduce {
+    background-color: #ff0;
+}
+
+.window-button.reduce:hover {
+    background-color: rgb(172, 172, 4);
+    cursor: pointer;
+}
+
+.window-button.fullscreen {
+    background-color: #0f0;
+}
+
+.window-button.fullscreen:hover {
+    background-color: rgb(7, 159, 7);
+    cursor: pointer;
+}
+
+.window-button:focus {
+    outline: none;
+}
+
+.console {
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: #000;
+    color: #fff;
+    overflow: auto;
+}
+
+.console pre {
+    margin: 0;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.console pre code {
+    color: rgb(65, 199, 116);
+    outline: none;
+    white-space: pre-wrap;
+}
+
+.console::-webkit-scrollbar {
+    width: 8px;
+}
+
+.console::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+.console::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.console::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+
+/* From Uiverse.io by axy1976 */
+/* tooltip settings 👇 */
+
+.btn-copy {
+    /* button */
+    --button-bg: #353434;
+    --button-hover-bg: #464646;
+    --button-text-color: #cccccc;
+    --button-hover-text-color: #8bb9fe;
+    --button-border-radius: 10px;
+    --button-diameter: 36px;
+    --button-outline-width: 1px;
+    --button-outline-color: rgb(141, 141, 141);
+    /* tooltip */
+    --tooltip-bg: #f4f3f3;
+    --toolptip-border-radius: 4px;
+    --tooltip-font-family: Menlo, Roboto Mono, monospace;
+    /* 👆 this field should not be empty */
+    --tooltip-font-size: 12px;
+    /* 👆 this field should not be empty */
+    --tootip-text-color: rgb(50, 50, 50);
+    --tooltip-padding-x: 7px;
+    --tooltip-padding-y: 7px;
+    --tooltip-offset: 8px;
+    /* --tooltip-transition-duration: 0.3s; */
+    /* 👆 if you need a transition, 
+    just remove the comment,
+    but I didn't like the transition :| */
+}
+
+.btn-copy {
+    box-sizing: border-box;
+    width: var(--button-diameter);
+    height: var(--button-diameter);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.btn-copy>.cp-tooltip {
+    position: absolute;
+    opacity: 0;
+    visibility: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font: var(--tooltip-font-size) var(--tooltip-font-family);
+    color: var(--tootip-text-color);
+    background: var(--tooltip-bg);
+    padding: var(--tooltip-padding-y) var(--tooltip-padding-x);
+    border-radius: var(--toolptip-border-radius);
+    pointer-events: none;
+    transition: all var(--tooltip-transition-duration) cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-copy>.cp-tooltip::before {
+    content: attr(data-text-initial);
+}
+
+.btn-copy>.cp-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: calc(var(--tooltip-padding-y) / 2 * -1);
+    width: var(--tooltip-padding-y);
+    height: var(--tooltip-padding-y);
+    background: inherit;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -999;
+    pointer-events: none;
+}
+
+.btn-copy svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cp-check-mark {
+    display: none;
+}
+
+/* actions */
+
+.btn-copy:hover .cp-tooltip,
+.btn-copy:focus:not(:focus-visible) .cp-tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: calc((100% + var(--tooltip-offset)) * -1);
+}
+
+.btn-copy:focus:not(:focus-visible) .cp-tooltip::before {
+    content: attr(data-text-end);
+}
+
+.btn-copy:focus:not(:focus-visible) .cp-clipboard {
+    display: none;
+}
+
+.btn-copy:focus:not(:focus-visible) .cp-check-mark {
+    display: block;
+}
+
+.btn-copy:hover,
+.btn-copy:focus {
+    background-color: var(--button-hover-bg);
+}
+
+.btn-copy:active {
+    outline: var(--button-outline-width) solid var(--button-outline-color);
+}
+
+.btn-copy:hover svg {
+    color: var(--button-hover-text-color);
+}
+
+.tb1.x2 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* margin: 10px; */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.apidoc-table {
+    background-color: #ccc;
+    font-weight: 700;
+}

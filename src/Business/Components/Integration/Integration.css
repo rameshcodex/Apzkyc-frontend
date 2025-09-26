@@ -1,0 +1,22 @@
+.integration-accord {
+    border-left: 5px solid #009FF5;
+    padding: 20px 10px;
+}
+
+#panel1-header .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+    transform: rotate(45deg) !important;
+}
+
+#panel1-header svg {
+    fill: #009FF5;
+    font-size: 35px;
+}
+
+p.typo {
+    color: #373D4D;
+    /* font-family: Inter; */
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 27px !important;
+}

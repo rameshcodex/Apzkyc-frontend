@@ -1,0 +1,200 @@
+.search_user {
+    position: relative;
+    width: 416px;
+    border-radius: 8px !important;
+}
+
+.search-svg {
+    position: absolute;
+    top: 28px;
+    left: 15px;
+}
+
+.search_user input::placeholder,
+.search_user input {
+    color: #A6AFBE;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search_user input::placeholder {
+    padding-left: 0px !important;
+    opacity: 1;
+}
+
+.search_user input {
+    padding-left: 45px !important;
+}
+
+.setting-cmn-btn {
+    color: #FFF !important;
+    text-align: center !important;
+    text-transform: capitalize !important;
+    font-family: Inter !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+}
+
+.teamManage-btn {
+    color: #009FF5 !important;
+}
+
+.clear-btn {
+    color: var(--Primary-Primary, #009FF5) !important;
+    text-align: center;
+    font-family: Inter !important;
+    font-size: 14px !important;
+    text-transform: capitalize !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+    white-space: nowrap;
+}
+
+.invite-btn {
+    border-radius: 4px;
+    background: var(--Primary-Primary, #009FF5) !important;
+    text-transform: capitalize !important;
+}
+
+.display-2.setting-input {
+    border-radius: 4px;
+    border: 1px solid #E1E5EA;
+    padding: 0 15px;
+    flex-wrap: wrap;
+}
+
+.setting-body .found-filter p {
+    font-weight: 700;
+    color: #7D8799;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.setting-body select#uncontrolled-native {
+    padding-right: 4px;
+}
+
+.setting-paper-table {
+    background: transparent !important;
+    box-shadow: none !important;
+    margin-top: 20px;
+}
+
+.tnamdesc {
+    color: #586073;
+    /* font-family: Inter; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 166.667% */
+}
+
+.actv {
+    border-radius: 9999px;
+    background: #D0F1E8;
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+.deactv {
+    border-radius: 9999px;
+    background: rgb(255 107 107);
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+.setting-top-sec.display-2,
+.left-setting-btn.display-4 {
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+}
+
+.left-setting-btn.display-4 button {
+    white-space: nowrap;
+}
+
+.setside {
+    color: #212736;
+    /* font-family: Inter; */
+    font-size: 19.956px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29.933px;
+    /* 150% */
+    letter-spacing: -0.2px;
+}
+
+.setside-main {
+    border-right: 0.998px solid #E1E5EA;
+    background: #F6F7F9;
+    padding: 10px;
+}
+
+.listHed span {
+    color: #373D4D;
+    /* font-family: Inter; */
+    font-size: 13.969px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23.947px;
+    white-space: pre;
+    /* 171.429% */
+}
+
+.listtxt span {
+    color: #373D4D;
+    /* font-family: Inter; */
+    font-size: 13.969px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23.947px;
+    /* 171.429% */
+}
+
+.vibter button.MuiButtonBase-root {
+    color: #373D4D;
+    /* font-family: Inter; */
+    font-size: 13.969px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23.947px;
+    min-height: 20px;
+    text-transform: capitalize;
+    white-space: pre;
+    /* 171.429% */
+}
+
+.vibter button.MuiButtonBase-root.Mui-selected {
+    color: var(--Primary-Primary, #009FF5);
+    /* font-family: Inter; */
+    font-size: 13.969px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23.947px;
+    /* 171.429% */
+    border-radius: 7.982px;
+    background: #FFF;
+    padding: 8px;
+    min-height: 20px;
+    text-transform: capitalize;
+    white-space: pre;
+}
+
+.vibter span.MuiTabs-indicator {
+    background-color: unset !important;
+}
+
+.vibter button {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 25px !important;
+}

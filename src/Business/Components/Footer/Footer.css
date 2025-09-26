@@ -1,0 +1,48 @@
+.footer-part {
+    background: rgba(16, 16, 16, 1);
+    padding: clamp(15px, 5vw, 50px);
+    color: #fff;
+}
+
+.footer-part p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 0;
+}
+
+.footer-part ul li {
+    padding: 10px 0;
+}
+
+.footer-part ul li a {
+    text-decoration: none;
+    color: rgb(196 195 194);
+}
+
+ul.media-icon {
+    gap: 20px;
+}
+
+ul.media-icon li {
+    width: fit-content;
+}
+
+.copyrght-txt {
+    border-top: 1px solid rgb(196 195 194);
+    padding: 45px 0 0;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.copyrght-txt span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(196 195 194);
+}
+
+.logo-part2 img {
+    width: 30px;
+    height: 30px;
+}

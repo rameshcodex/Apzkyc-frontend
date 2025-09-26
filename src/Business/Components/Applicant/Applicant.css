@@ -1,0 +1,908 @@
+/* priya */
+.applicant-full .MuiTabs-flexContainer {
+    background: rgba(255, 255, 255, 1);
+    border: 0.89px solid var(--Primary-Primary, rgba(0, 159, 245, 1));
+    border-radius: 15px;
+    width: fit-content;
+    padding: 3px;
+}
+
+.applicant-full span.MuiTabs-indicator {
+    display: none;
+}
+
+.applicant-full button.Mui-selected {
+    background: rgba(0, 159, 245, 1);
+    border-radius: 12px;
+    color: #fff;
+}
+
+.applicant-full button {
+    font-size: 13px;
+    font-family: var(--font-family);
+    padding: 0 12px;
+    min-height: 38px;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* width: 100%; */
+}
+
+.action-tab button {
+    font-size: 13px;
+    font-family: var(--font-family);
+    padding: 0 12px;
+    min-height: 38px;
+    text-transform: capitalize;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* width: 100%; */
+}
+
+.found-filter p {
+    font-weight: 700;
+    line-height: 15.8px;
+    font-size: 13px;
+}
+
+.value select#uncontrolled-native,
+.value span {
+    font-size: 14px;
+}
+
+.value .MuiInputBase-root::before,
+.reqiued-table .MuiInputBase-root::before {
+    border-bottom: none !important;
+}
+
+.refresh-bar span svg {
+    font-size: 17px;
+}
+
+.found-filter.display-1 {
+    gap: 4px;
+}
+
+.applicant-table thead tr th {
+    font-weight: 600;
+    line-height: 17.85px;
+    text-align: left;
+    border-bottom: none !important;
+    font-family: var(--font-family);
+}
+
+.refresh-bar span {
+    color: rgba(0, 159, 245, 1);
+    font-size: 13px;
+    gap: 5px;
+}
+
+.applicant-table thead {
+    background: rgba(217, 241, 253, 1);
+}
+
+.applicant-table .MuiTableCell-root {
+    font-family: var(--font-family);
+    padding: 20px 2px;
+}
+
+.filter-colmn svg {
+    color: rgba(0, 159, 245, 1);
+    width: 20px;
+}
+
+.filter-colmn .MuiInputBase-root::placeholder {
+    color: rgba(0, 159, 245, 1) !important;
+}
+
+.apllicant-direct button {
+    background: #009FF5;
+    display: flex;
+    gap: 4px;
+    height: 43px;
+    padding: 9px 13px 9px 6px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.reqired-details ul li {
+    position: var(--position-rel);
+}
+
+.reqired-details ul li:before {
+    position: var(--position-abs);
+    background: #AAAAAA;
+    width: 12px;
+    height: 12px;
+    content: '';
+    border-radius: 50px;
+    top: 13px;
+    left: -5px;
+}
+
+.reqired-details ul li p {
+    margin: 0;
+}
+
+.reqired-details ul li label {
+    color: #41495B99;
+    font-size: 12px;
+}
+
+.applicant-box {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    box-shadow: 12px 15px 29px -9px #0000001A;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px
+}
+
+.applicant-box .MuiPaper-root {
+    background: transparent;
+    box-shadow: none;
+}
+
+.applicant-box .MuiPaper-root {
+    background: transparent;
+    box-shadow: none;
+}
+
+.applicant-box div#panel1-header {
+    background: #D9F1FD;
+    border-radius: 8px 8px 0 0;
+    font-weight: 700;
+}
+
+.applicant-box .MuiAccordionSummary-content.Mui-expanded {
+    margin: 4px 0 !important;
+}
+
+.applicant-box div#panel1-header svg {
+    fill: #259AEA;
+}
+
+.reqired-details .MuiFormControl-root {
+    margin: 10px 0;
+}
+
+.reqired-details .MuiInputBase-root {
+    height: 45px;
+    border-radius: 10px;
+}
+
+.reqired-details p {
+    margin-bottom: 0;
+}
+
+.applicant-box p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--font-family);
+}
+
+.alert-box p {
+    font-size: 14px;
+    font-weight: 400;
+    gap: 4px;
+}
+
+.alert-box svg {
+    fill: #7D8799;
+}
+
+.alert-box {
+    background: #F6F7F9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.add-photo .MuiStack-root {
+    justify-content: center;
+}
+
+.add-photo .MuiStack-root button {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.applicant-create {
+    margin-top: 20px;
+}
+
+.applicant-create button {
+    width: 100%;
+    background: #19BC9B;
+    height: 55px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.applicant-create button:hover {
+    background: #19BC9B;
+}
+
+.alert-box a {
+    color: #1764FF;
+}
+
+.add-photo {
+    margin-top: 40px;
+}
+
+.applicant-table label.MuiFormControlLabel-root {
+    margin: 0;
+}
+
+.Toastify button.Toastify__close-button.Toastify__close-button--light {
+    text-align: end;
+}
+
+.Toastify .Toastify__toast-body {
+    white-space: nowrap;
+}
+
+.table-row p {
+    margin: 3px;
+    color: rgba(65, 73, 91, 0.6);
+}
+
+.table-row p:first-child {
+    color: #000;
+}
+
+span.tag-detail {
+    background: rgba(243, 243, 243, 1);
+    color: rgba(93, 103, 143, 1);
+    font-weight: 600;
+    padding: 7px 16px;
+}
+
+.applicant-table {
+    margin-top: 15px;
+}
+
+.applicant-table svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiTableSortLabel-icon {
+    display: none;
+}
+
+.Approved span {
+    background: rgba(208, 241, 232, 1);
+    padding: 5px 13px;
+    border-radius: 50px;
+    font-size: 10px;
+    color: rgba(17, 82, 66, 1);
+    position: relative;
+}
+
+.rejected span {
+    background: rgba(255, 210, 206, 1);
+    padding: 5px 13px;
+    border-radius: 50px;
+    font-size: 10px;
+    color: rgba(92, 0, 17, 1);
+    position: relative;
+}
+
+.rejected span:before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: rgba(92, 0, 17, 1);
+    border-radius: 50px;
+    bottom: 9px;
+    left: 5px;
+}
+
+.Approved span:before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: green;
+    border-radius: 50px;
+    bottom: 9px;
+    left: 5px;
+}
+
+label.check-status {
+    color: rgba(65, 73, 91, 0.6);
+}
+
+.Approved,
+.rejected {
+    margin-bottom: 10px;
+}
+
+.csv-export span {
+    color: rgba(0, 159, 245, 1);
+    font-size: 13px;
+}
+
+.reqired-details.newapplicant-modal .MuiInputBase-root.MuiOutlinedInput-root {
+    height: 40px;
+}
+
+.csv-export {
+    padding: 6px 0;
+    border-bottom: 2px solid rgba(0, 159, 245, 1);
+    margin-bottom: 10px;
+}
+
+.combine-filter svg {
+    color: #000;
+}
+
+.combine-filter span {
+    color: #000 !important;
+}
+
+.steps svg {
+    fill: rgba(25, 188, 155, 1);
+}
+
+.genetrate-btn button {
+    font-size: 14px;
+    text-transform: capitalize;
+    width: 100%;
+    height: 42px;
+}
+
+.genetrate-btn .MuiStack-root {
+    justify-content: center;
+}
+
+/* priya */
+
+
+
+
+/* priya */
+.id-num {
+    color: #586073;
+    /* font-family: Inter; */
+    font-size: var(--font-12);
+    font-style: normal;
+    font-weight: var(--weight-500);
+    line-height: 16px;
+    /* 133.333% */
+}
+
+.viwedata {
+    color: #009FF5;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: var(--font-12);
+    font-style: normal;
+    font-weight: var(--weight-500);
+    line-height: 16px;
+    /* 133.333% */
+}
+
+.svgcur svg {
+    cursor: pointer;
+}
+
+.req button {
+    color: #373D4D;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: 12px;
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 4px;
+    border: 1px solid #E1E5EA;
+    background: #FFF;
+    padding: 8px 15px;
+    /* 171.429% */
+}
+
+.chkman button {
+    color: #fff;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: 12px;
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 4px;
+    background: var(--Primary-Primary, #009FF5) !important;
+    padding: 8px 15px;
+}
+
+.resq {
+    display: flex;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #E1E5EA;
+    background: #FFF;
+}
+
+.appliname {
+    color: #212736;
+    /* font-family: Inter; */
+    font-size: var(--font-18);
+    font-style: normal;
+    font-weight: var(--weight-700);
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: -0.2px;
+    margin-left: 10px;
+}
+
+.bhk {
+    border-top: 1px solid #E1E5EA;
+    background: #E7EAEE;
+    padding: 5px;
+}
+
+.appli-tab .MuiButtonBase-root.Mui-selected {
+    color: #009FF5;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 171.429% */
+    /* padding: 12px 3px !important; */
+    text-transform: capitalize;
+}
+
+.appli-tab .MuiTabs-indicator {
+    background: #009FF5;
+    bottom: 10px;
+}
+
+.appli-tab .MuiButtonBase-root {
+    color: #373D4D;
+    text-align: center;
+    /* font-family: Inter; */
+    text-transform: capitalize;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* padding: 12px 3px !important; */
+    /* 171.429% */
+}
+
+.appli-tab .MuiTabs-flexContainer {
+    gap: 3px !important;
+}
+
+.docsreq {
+    border-radius: 9999px;
+    background: #E1E5EA;
+    padding: 5px;
+    color: #373D4D;
+    /* font-family: Inter; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    /* 133.333% */
+}
+
+.applstas {
+    color: #212736;
+    /* font-family: Inter; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: -0.2px;
+}
+
+.prfsumer-mian {
+    border-radius: 12px;
+    /* height: 100px; */
+    background: #F6F7F9;
+    padding: 30px 20px;
+    color: #586073;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 8px;
+    height: 150px;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.lvl1 {
+    color: #586073;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.smy {
+    color: #212736;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.k-y-l {
+    color: #212736;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.iddoc {
+    color: #212736;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.yellow {
+    border-radius: 9999px;
+    background: #FAAD14;
+    width: 8px;
+    height: 8px;
+}
+
+.prinfo {
+    border-radius: 12px;
+    border: 1px solid #D3D7DF;
+}
+
+.inner-prf {
+    padding: 15px;
+}
+
+.nme {
+    color: #212736;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.frtnme {
+    color: #586073;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 171.429% */
+
+
+}
+
+.aprnme {
+    color: #A6AFBE;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+    margin-left: 2px;
+}
+
+.inerpf2 {
+    margin: 15px 0;
+}
+
+.brleft {
+    border-left: 1px solid #D3D7DF;
+    padding-left: 50px;
+}
+
+.exteddata button {
+    color: #FFF;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 171.429% */
+    border-radius: 8px;
+    background: #009FF5 !important;
+    text-transform: capitalize;
+}
+
+.upldnewdata {
+    border-radius: 4px;
+    border: 1px solid #E1E5EA;
+    background: #FFF;
+    color: #373D4D;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 171.429% */
+    padding: 5px;
+}
+
+.stus {
+    border-radius: 12px;
+    background: #EEFBF7;
+    padding: 15px 15px 15px 30px;
+}
+
+.aprstus {
+    color: #115242;
+    /* font-family: Inter; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    /* 133.333% */
+    border-radius: 9999px;
+    background: #D0F1E8;
+    padding: 5px 15px;
+    margin-top: 8px;
+    width: fit-content;
+}
+
+.green {
+    border-radius: 9999px;
+    background: #25B793;
+    width: 8px;
+    height: 8px;
+}
+
+.red {
+    border-radius: 9999px;
+    background: red;
+    width: 8px;
+    height: 8px;
+}
+
+.chngestatus button {
+    border-radius: 4px;
+    background: #D3E2FF;
+    color: #FFF;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.imr1 {
+    padding-right: 30px;
+}
+
+.imrstyle {
+    display: flex;
+    align-items: flex-start;
+}
+
+.withbcg {
+    border-radius: 0px 12px 12px 0px;
+    background: #F6F7F9;
+    padding: 20px;
+}
+
+.prvimg1 img {
+    width: 370px;
+    height: 270px;
+}
+
+.spc-nm {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.face img {
+    width: 60px;
+    height: 50px;
+}
+
+.facetxt {
+    color: #7D8799;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.editprf {
+    color: #212736;
+    /* font-family: Inter; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 133.333% */
+}
+
+.matk {
+    color: #373D4D;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.popinpt {
+    border-radius: 4px;
+    background: #FFF;
+    border: 1px solid #C4CAD4;
+    padding: 8px;
+    width: 100%;
+    box-shadow: 0px 0px 0px 1px #C4CAD4 inset;
+}
+
+.frstpop {
+    color: #212736;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 5px 0;
+    /* 171.429% */
+}
+
+.cxl button {
+    border-radius: 4px;
+    border: 1px solid #E1E5EA;
+    background: #FFF;
+    color: #373D4D;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: 14px;
+    padding: 7px 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 171.429% */
+    text-transform: capitalize;
+}
+
+.sve button {
+    color: #FFF;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 171.429% */
+    border-radius: 4px;
+    background: #009FF5 !important;
+    padding: 7px 20px;
+    text-transform: capitalize;
+}
+
+:focus-visible {
+    outline: none !important;
+}
+
+.listmui {
+    padding-top: 0px !important;
+    top: -20px;
+}
+
+.aru-sure {
+    color: #373D4A;
+    /* font-family: Poppins; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 19.6px */
+}
+
+.req-chk button {
+    border-radius: 5px;
+    background: #2E74FF !important;
+    color: #FFF;
+    /* font-family: Poppins; */
+    text-transform: capitalize;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 11px 15px;
+    /* 16.8px */
+}
+
+.appvr button {
+    color: #FFF;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 171.429% */
+    border-radius: 4px;
+    background: #25B793 !important;
+    text-transform: capitalize;
+}
+
+.resettag {
+    color: #1764FF;
+    text-align: center;
+    /* font-family: Inter; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    /* 133.333% */
+}
+
+.select-appli .MuiButtonBase-root,
+.select-appli .MuiSelect-select {
+    color: #212736;
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+
+.select-appli .MuiSelect-select {
+    padding: 0px;
+}
+
+.select-appli fieldset {
+    border: unset;
+}
+
+.bckin {
+    position: absolute;
+    left: 0;
+}
+
+.whole-modal::-webkit-scrollbar {
+    width: 0;
+}
+
+.applisearch input::placeholder {
+    color: var(--Primary-Primary, #009FF5);
+    /* font-family: "Open Sans"; */
+    font-size: 13.606px;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: normal;
+}

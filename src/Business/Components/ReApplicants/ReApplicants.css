@@ -1,0 +1,67 @@
+.cmn-pagination .MuiToolbar-root {
+    justify-content: flex-start;
+}
+.cmn-pagination .MuiToolbar-root {
+    justify-content: flex-start;
+}
+.cmn-pagination .MuiTablePagination-spacer{
+display: none;
+}
+.applicant-input {
+    justify-content: space-between;
+}
+.refresh-filter-btn{
+    color: #19BC9B !important;
+    text-align: center !important;
+    font-family: "Inter" !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 19.5px !important;
+    text-transform: capitalize !important;
+    gap: 10px;
+}
+.reApplicant-body .item-list-table table thead tr th{ 
+    color: #121314 !important;
+    font-family: "Open Sans" I !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+}
+.reApplicant-body .applicant-input label{
+    color: #737373;
+    font-family: "Inter";
+    font-size: 13px !important;
+    font-weight: 400 ;
+    line-height: normal;
+    padding-bottom: 6px;
+}
+.found {
+    color: #121314;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 6px;
+}
+.applicant-input .email-field .MuiInputBase-root, .applicant-input .select-item-list .email-field .MuiInputBase-root, .applicant-input .MuiFormControl-root {
+    width: 235px;
+}
+.applicant-input  .select-item-list input, .applicant-input  .select-item-list input::placeholder, .applicant-input .email-field .MuiInputBase-root, .applicant-input .email-field .MuiInputBase-root::placeholder{
+    color: #ADADAD !important;
+    font-family: "Inter" !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+.app input::placeholder{
+    color:rgb(0 0 0) !important;
+}
+.reApplicant-body .import-popup.profile-set-head.display-2 {
+    margin-bottom: 37px;
+}
+.profile-tab-outer-div {
+    border-radius: var(--Spacing-ml, 20px);
+    background: #FFF;
+    padding: 20px;
+}
+.profile-tab-outer-div .display-4 {
+    flex-wrap: wrap;
+}

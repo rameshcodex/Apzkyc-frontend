@@ -1,0 +1,125 @@
+.dcBk {
+    background: #FFF;
+}
+
+.dc-tabtext {
+    color: #FFF;
+    /* font-family: "Plus Jakarta Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: -0.28px;
+}
+
+.dc-tabtext2 {
+    color: #8E92BC;
+    /* font-family: "Plus Jakarta Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: -0.28px;
+}
+
+.dc-tab {
+    border-radius: 10px;
+    background: var(--main, #1B7CE5);
+    width: fit-content;
+    margin: 15px auto;
+    padding: 10px 80px 10px 10px;
+    gap: 10px;
+}
+
+.dc-tab2 {
+    border-radius: 10px;
+    background: #F5F5F7;
+    width: fit-content;
+    margin: 15px auto;
+    padding: 10px 80px 10px 10px;
+    gap: 10px;
+}
+
+.doc-mn {
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0px 117.65px 117.65px 0px rgba(91, 157, 255, 0.10);
+    padding: 12px;
+    margin: 12px auto;
+    width: 590px;
+}
+
+.jip-nm {
+    color: #808FDD;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dat {
+    color: #A3A3A3;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.doc-im {
+    width: 193px;
+    height: 173px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: #C4C4C4;
+}
+
+.doc-name {
+    color: #989898;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 8px 0;
+}
+
+.docty {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.verify {
+    color: #25C348;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.not-verify {
+    color: #d32f2f;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.req-doc {
+    color: #005EFE;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

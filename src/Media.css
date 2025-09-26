@@ -1,0 +1,545 @@
+@media (max-width: 575.98px) {
+  .prvimg1 img {
+    width: 100% !important;
+    height: 150px !important;
+  }
+
+  .simp .MuiBox-root {
+    padding: 10px !important;
+  }
+
+  .applstas {
+    font-size: 14px !important;
+  }
+
+  .exteddata button {
+    font-size: 12px !important;
+  }
+
+  .docsreq,
+  .chkman button,
+  .req button,
+  .upldnewdata {
+    font-size: 10px !important;
+  }
+
+  .spc-nm {
+    width: 100% !important;
+  }
+
+  .prfsumer-mian {
+    height: auto !important;
+  }
+
+  .activ-pl {
+    font-size: 14px !important;
+  }
+
+  /*  */
+  /* statistic */
+  .statistic-body .getstar {
+    /* width: min-content; */
+    /* white-space: pre-wrap; */
+  }
+
+  .statistic-body .getstar svg {
+    width: 29px;
+  }
+
+  /* statistic */
+  /* settings */
+  .setting-body select#uncontrolled-native {
+    padding-right: 20px !important;
+  }
+
+  /* settings */
+
+  .activate .MuiInputBase-root {
+    height: 28px !important;
+    width: 26px !important;
+  }
+
+  .tb1 .MuiBox-root {
+    padding: 0 !important;
+  }
+
+  .login-banner img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .frnt-sid {
+    width: 85% !important;
+  }
+
+  .selectctry {
+    width: 80% !important;
+  }
+
+  .email-filed {
+    width: 100% !important;
+  }
+
+  .login-grid {
+    padding: 25px !important;
+  }
+
+  .brand-logo {
+    justify-content: center !important;
+  }
+
+  .compliance-brand,
+  section.full-security h2 {
+    text-align: center !important;
+  }
+
+  .addph {
+    flex-direction: column !important;
+  }
+
+  .register-acctn p {
+    text-align: center !important;
+  }
+
+  .profile-lang .select-item-list {
+    width: auto !important;
+  }
+
+  .first_inputs.display-1 {
+    flex-wrap: wrap;
+  }
+
+  .first_inputs.display-1>div:last-child {
+    margin-top: 0 !important;
+  }
+
+  .comingsoon img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  /* clientList */
+  .clientList-body {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .compliance-brand,
+  section.full-security h2 {
+    text-align: center !important;
+  }
+
+  /* clientList */
+  /* statistic */
+  .check_app_first_child::after {
+    right: 0 !important;
+  }
+
+  .analytic-head-theme {
+    line-height: 20px !important;
+  }
+
+  /* reapplicant */
+  .register-full .login-bg,
+  .signin-full {
+    margin: 35px auto !important;
+  }
+
+  .verfication-btn.display-1 {
+    flex-wrap: wrap;
+  }
+
+  .banner-img img,
+  .banner-info img {
+    width: 300px;
+  }
+
+  .crypto-card .MuiCardContent-root {
+    padding: 15px !important;
+  }
+
+  .verify-box {
+    padding: 25px !important;
+  }
+
+  .copyrght-txt {
+    flex-wrap: wrap;
+  }
+
+  .add-photo .MuiStack-root {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .genetrate-btn button {
+    height: 42px !important;
+    white-space: nowrap;
+    margin-top: 15px !important;
+    margin-left: 0 !important;
+    font-size: 12px !important;
+  }
+
+  .genetrate-btn .MuiStack-root {
+    display: block;
+  }
+
+  .reqired-details.newapplicant-modal ul li:before {
+    width: 9px;
+    height: 9px;
+    top: 14px;
+    left: 1px;
+  }
+
+  .select-option .MuiFormControl-root {
+    width: auto;
+  }
+
+  .detail-box {
+    padding: 25px !important;
+  }
+
+  .detail-box .prfsumer-mian.text-left .display-2.margin-top {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .verfify.display-1 {
+    flex-wrap: wrap;
+  }
+
+  .detail-box .verfiy-btn {
+    margin-top: 5px;
+  }
+
+  .detail-box .prfsumer-mian.text-left .iddoc {
+    text-align: left;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  .filter-colmn.display-1 {
+    display: block;
+  }
+
+  .filter-colmn.display-1 button.MuiButtonBase-root {
+    padding: 3px;
+  }
+
+  .whole-modal {
+    height: 72vh;
+    overflow: scroll;
+  }
+
+  .whole-modal {
+    height: 72vh;
+    overflow: scroll;
+  }
+
+  .doc-mn {
+    width: 70% !important;
+    margin: 15px auto !important;
+  }
+
+  .uplfile {
+    width: 80% !important;
+    /* margin: 15px 30px !important; */
+  }
+
+  .forget-link {
+    width: 100% !important;
+  }
+
+  .dashmain {
+    flex-direction: column !important;
+  }
+
+  /* .logselct.MuiFormControl-root {
+        width: 60% !important;
+    } */
+  .add-d-des {
+    max-width: 100% !important;
+  }
+
+  .profile_whole_div {
+    max-width: none !important;
+  }
+
+  .change_pic {
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .overview_body .dcard-main {
+    width: 100%;
+  }
+
+  .ChatBox_grid_box li.MuiListItem-root,
+  li.userTwoChat,
+  .ChatBox_grid_box .MuiListItemText-root p {
+    width: 100% !important;
+  }
+
+  .sender_chat {
+    padding: 20px !important;
+  }
+
+  .logo-bar.header-logo {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .applicant-detail.display-1 {
+    flex-wrap: wrap;
+  }
+
+  .csv-export.display-2 {
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .action-tab.display-2 {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .applicant-table tr.MuiTableRow-root {
+    white-space: nowrap;
+  }
+
+  .imrstyle {
+    flex-wrap: wrap;
+  }
+
+  section.full-security h2 {
+    margin-bottom: 25px !important;
+  }
+
+  .user-verification p {
+    margin: 25px auto;
+  }
+
+  .verification-img {
+    justify-content: center;
+  }
+
+  .verfi-img {
+    text-align: center;
+  }
+
+  /* settings */
+  .setting-top-sec.display-2,
+  .left-setting-btn.display-4 {
+    justify-content: flex-start;
+  }
+
+  .left-setting-btn.display-4 {
+    margin-bottom: 20px;
+  }
+
+  /* settings */
+  .signin-full {
+    height: auto !important;
+  }
+
+  .flexng {
+    justify-content: center !important;
+  }
+
+  .signin-left h2,
+  .signin-left p {
+    max-width: unset !important;
+  }
+
+  .signin-left {
+    text-align: center;
+  }
+
+  /* statistic */
+  /* reapplicant */
+  .profile-tab-outer-div .display-4 {
+    justify-content: flex-start;
+  }
+
+  .profile-tab-outer-div .import-popup.profile-set-head.display-2 {
+    flex-wrap: wrap;
+  }
+
+  .card-m1 {
+    position: inherit !important;
+    right: 0 !important;
+    top: 0 !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .basic-main {
+    width: 70% !important;
+    margin: auto;
+  }
+
+  .change_pic {
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .profile_whole_div {
+    max-width: none !important;
+  }
+
+  .profile_whole_div .change_pic .profile-tab-update-inner,
+  .profile_whole_div .change_pic .cursor {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .profile-tab-update-outer.display-2 {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 1299.98px) {}
+
+@media (max-width: 1199.98px) {
+
+  .detail-img,
+  .customer-img {
+    position: static !important;
+  }
+
+  .head-bg .MuiToolbar-root {
+    flex-direction: row-reverse;
+    align-items: baseline;
+    padding-right: 0;
+  }
+
+  .head-bg .MuiToolbar-root img {
+    text-align: left !important;
+  }
+
+  .mobile-drawer .MuiPaper-root {
+    width: 100%;
+    padding: 20px 0 0 20px;
+  }
+
+  .mobile-drawer .MuiPaper-root {
+    width: 100%;
+    padding: 20px 0 0 20px;
+  }
+
+  .mobile-drawer ul {
+    margin: 25px auto;
+  }
+
+  .mobile-drawer ul li {
+    padding: 10px 0 25px;
+  }
+
+  .mobile-drawer ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .close-icon {
+    display: block !important;
+  }
+
+  .select-option .MuiFormControl-root {
+    width: 150px !important;
+  }
+
+  body.scrolled .fixed-header {
+    animation: none !important;
+    background: #fff;
+  }
+
+  section.banner-sctn {
+    padding-top: 100px !important;
+  }
+
+  .appbar-mobile {
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .ver-p {
+    width: 100% !important;
+  }
+
+  .login-grid {
+    max-width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .xl {
+    display: none !important;
+  }
+
+  .support_whole_grid {
+    flex-direction: column-reverse !important;
+  }
+
+  .login-full.reg .login-bg {
+    margin-top: 0px !important;
+    height: 760px !important;
+
+  }
+}
+
+@media (max-width: 1299.98px) {
+  .industry-banner {
+    position: var(--position-rel) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+@media (min-width: 575.98px) {}
+
+@media (min-width: 767.98px) {}
+
+@media (min-width: 991.98px) {}
+
+@media (min-width: 1199.98px) {}
+
+@media (min-width: 1299.98px) {}
+
+@media (min-width: 576px) and (max-width: 768px) {}
+
+@media (min-width: 576px) and (max-width: 992px) {}
+
+@media (min-width: 576px) and (max-width: 1200px) {}
+
+@media (min-width: 576px) and (max-width: 1400px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner-info img {
+    width: 750px;
+  }
+
+  .detail-box {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {}
+
+@media (min-width: 768px) and (max-width: 1400px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .applicant-detail.display-1 {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {}
+
+@media (min-width: 1200px) and (max-width: 1400px) {}
