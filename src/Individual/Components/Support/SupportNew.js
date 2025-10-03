@@ -521,7 +521,7 @@ function SupportNew() {
                             return (
                                 item?.id === "admin" ?
                                     <div className='leftsidechat' key={index}
-                                        style={{ background: `${formatTime(item?.time) === formatTime(location?.state?.time) && item?.notification_id === location?.state?.notify ? '#009FF5' : ''}` }}
+                                        style={{ background: `${formatTime(item?.time) === formatTime(location?.state?.time) && item?.notification_id === location?.state?.notify ? 'var(--theme-color) ' : ''}` }}
                                     >
                                         <div className="display-1 mappedchat left">
                                             <Avatar
@@ -741,7 +741,7 @@ function SupportNew() {
                 >
                     <Box sx={style}>
                         <div className="text-right clox cursor">
-                            <CancelIcon onClick={handleClose} sx={{ fill: '#009FF5' }} />
+                            <CancelIcon onClick={handleClose} sx={{ fill: 'var(--theme-color) ' }} />
                         </div>
                         <div className='Live-tet'>
                             Create Your Ticket

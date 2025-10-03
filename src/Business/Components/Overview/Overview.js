@@ -163,7 +163,7 @@ function Overview() {
                     },
                 }
             },
-            colors: ['#1ab7ea', '#0084ff', '#39539E', '#0077B5'],
+            colors: ['var(--theme-color)', 'var(--theme-color)', 'var(--theme-color)', 'var(--theme-color)'],
             labels: [
                 'Total Hit',
                 'Sucess Rate',
@@ -406,7 +406,7 @@ function Overview() {
                                                         {row.name}
                                                     </p>
                                                     <p class="percent">
-                                                        <svg width="20" height="20" fill="#009FF5" viewBox="0 0 1792 1792" xmlns="[http://www.w3.org/2000/svg ↗](http://www.w3.org/2000/svg)"> <path d="M384 576q0-26 19-45t45-19h896q26 0 45 19t19 45-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45z"></path> </svg> 20%
+                                                        <svg width="20" height="20" fill="var(--theme-color) " viewBox="0 0 1792 1792" xmlns="[http://www.w3.org/2000/svg ↗](http://www.w3.org/2000/svg)"> <path d="M384 576q0-26 19-45t45-19h896q26 0 45 19t19 45-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45z"></path> </svg> 20%
                                                     </p>
                                                 </div>
                                                 <div class="data">

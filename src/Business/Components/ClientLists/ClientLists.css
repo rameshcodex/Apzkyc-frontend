@@ -8,9 +8,10 @@
 } */
 .add-list-btn {
     border-radius: 3.61px !important;
-    background: var(--Primary-Primary, #009FF5) !important;
+    background: var(--Primary-Primary, var(--theme-color)) !important;
     color: #FFF !important;
 }
+
 .cmn-btn {
     text-align: center;
     font-size: 12.636px !important;
@@ -171,7 +172,7 @@
 }
 
 .select-item-list input:focus {
-    border: 2px solid #009ff5;
+    border: 2px solid var(--theme-color);
 }
 
 .createList-popup .MuiFormControl-root {

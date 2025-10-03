@@ -32,10 +32,12 @@
     height: 750px;
     margin-top: 0px !important;
 }
-.login-full.reg{
+
+.login-full.reg {
     padding-top: 20px;
     overflow: visible !important;
 }
+
 .login-full.reg .login-bg::-webkit-scrollbar {
     width: 0;
 }
@@ -77,7 +79,7 @@
 }
 
 /* .submit-button button {
-    background: var(--color-Blue);
+    background: var(--theme-color);
     height: 36px;
     padding: 14px 0 0;
     border-radius: 5px;
@@ -88,7 +90,7 @@
 .submit-button button {
     color: #fff !important;
     text-decoration: none;
-    background: var(--color-Blue) !important;
+    background: var(--theme-color) !important;
     border-radius: 5px;
     /* height: 36px; */
     margin-top: 15px;
@@ -189,7 +191,7 @@
 .signin-left h2 {
     max-width: 460px;
     font-size: clamp(25px, 5vw, 32px);
-    color: rgba(0, 159, 245, 1);
+    color: var(--theme-color);
     font-weight: var(--weight-600);
 }
 
@@ -232,7 +234,7 @@
 .back-btn a {
     display: flex;
     gap: 10px;
-    color: rgba(46, 116, 255, 1);
+    color: var(--theme-color);
     align-items: center;
 }
 

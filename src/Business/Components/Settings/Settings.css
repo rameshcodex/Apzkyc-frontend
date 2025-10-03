@@ -41,11 +41,11 @@
 }
 
 .teamManage-btn {
-    color: #009FF5 !important;
+    color: var(--theme-color) !important;
 }
 
 .clear-btn {
-    color: var(--Primary-Primary, #009FF5) !important;
+    color: var(--Primary-Primary, var(--theme-color)) !important;
     text-align: center;
     font-family: Inter !important;
     font-size: 14px !important;
@@ -57,7 +57,7 @@
 
 .invite-btn {
     border-radius: 4px;
-    background: var(--Primary-Primary, #009FF5) !important;
+    background: var(--Primary-Primary, var(--theme-color)) !important;
     text-transform: capitalize !important;
 }
 
@@ -174,7 +174,7 @@
 }
 
 .vibter button.MuiButtonBase-root.Mui-selected {
-    color: var(--Primary-Primary, #009FF5);
+    color: var(--Primary-Primary, var(--theme-color));
     /* font-family: Inter; */
     font-size: 13.969px;
     font-style: normal;

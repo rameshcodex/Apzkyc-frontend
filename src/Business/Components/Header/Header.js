@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListItemText, useMediaQuery, useTheme } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import Logo from '../../../Images/logo.png';
 import { Link } from 'react-router-dom'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import './Header.css';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import consts from '../../../constant';
 
 const Header = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
@@ -81,10 +81,10 @@ const Header = () => {
                         </IconButton>
                     )}
                     <Box sx={{ flexGrow: 1 }}>
-                        <Grid container spacing={2} justifyContent={'space-between'}>
+                        <Grid container spacing={2} justifyContent={'space-between'} alignItems={"center"}>
                             <Grid item xs={12} sm={4} md={2} lg={2} xl={3} className='appbar-mobile'>
                                 <div className='logo-bar header-logo'>
-                                    <Link to="/"><img src={Logo} />
+                                    <Link to="/"><img src={consts.projectLogo} width={"auto"} height={40} />
                                     </Link>
 
                                 </div>
@@ -125,7 +125,7 @@ const Header = () => {
                     <HighlightOffIcon />
                 </div>
                 <div className='logo-bar header-logo mobile-logo'>
-                    <Link to="/"><img src={Logo} />
+                    <Link to="/"><img src={consts.projectLogo} />
                     </Link>
 
                 </div>

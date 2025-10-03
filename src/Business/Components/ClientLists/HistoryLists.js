@@ -563,7 +563,7 @@ export default function HistoryLists() {
                         <TableBody>
                           {clientLoading ? (<TableRow > <TableCell colSpan={7} style={{ textAlign: "center" }}>
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100px' }}>
-                              <Triangle color="#009ff5" height={80} width={80} />
+                              <Triangle color="var(--theme-color) " height={80} width={80} />
                             </div>
                           </TableCell>  </TableRow>) : paginatedClientList.length > 0 ?
                             (paginatedClientList?.map((List, index) => (

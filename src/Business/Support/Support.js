@@ -473,7 +473,7 @@ function LiveChat() {
     }, [location?.state?.id])
 
     const left = (
-        <div className="bxshade" style={{width:"100%"}}>
+        <div className="bxshade" style={{ width: "100%" }}>
             <div className='livechat-banner' >
                 <div className="livechathead display-2">
                     <div className='display-1'>
@@ -520,7 +520,7 @@ function LiveChat() {
                             return (
                                 item?.id === "admin" ?
                                     <div className='leftsidechat' key={index}
-                                        style={{ background: `${formatTime(item?.time) === formatTime(location?.state?.time) && item?.notification_id === location?.state?.notify ? '#009FF5' : ''}` }}
+                                        style={{ background: `${formatTime(item?.time) === formatTime(location?.state?.time) && item?.notification_id === location?.state?.notify ? 'var(--theme-color) ' : ''}` }}
                                     >
                                         <div className="display-1 mappedchat left">
                                             <Avatar
@@ -601,8 +601,8 @@ function LiveChat() {
     )
 
     const right = (
-        <div className='livechat-banner bxshade' style={{height:"auto",width:"100%"}}>
-            <div className="livechathead display-2" style={{top:"-10px"}}>
+        <div className='livechat-banner bxshade' style={{ height: "auto", width: "100%" }}>
+            <div className="livechathead display-2" style={{ top: "-10px" }}>
                 <div className='display-2'>
                     <div className='Live-tet'>
                         Chats
@@ -610,13 +610,13 @@ function LiveChat() {
 
                 </div>
                 <Tooltip title="Rise Ticket">
-                    <AddCircleOutlineRoundedIcon className='cursor' style={{margin:0}} onClick={handleOpen} />
+                    <AddCircleOutlineRoundedIcon className='cursor' style={{ margin: 0 }} onClick={handleOpen} />
                 </Tooltip>
 
             </div>
             {playCard.map((row, i) => {
                 return (
-                    <div style={{margin:"0"}} key={i} className={row._id === showd ? 'active display-2 cursor' : 'display-2 cursor nonactive'}
+                    <div style={{ margin: "0" }} key={i} className={row._id === showd ? 'active display-2 cursor' : 'display-2 cursor nonactive'}
                         onClick={(() => {
                             setShowd(row._id);
                             getOneTicket(row._id);
@@ -647,7 +647,7 @@ function LiveChat() {
                             </div>
                         }
 
-                        <div style={{fontSize:"13px"}} >
+                        <div style={{ fontSize: "13px" }} >
                             {getTimeOrDateFromTimestamp(row?.lastMsgTime)}
                         </div>
 
@@ -694,7 +694,7 @@ function LiveChat() {
                                         md={12}
                                         lg={8}
                                         xl={9}
-                                        style={{display:"flex"}}
+                                        style={{ display: "flex" }}
                                     // style={{ padding: '20px' }}
                                     >
 
@@ -708,7 +708,7 @@ function LiveChat() {
                                         md={false}
                                         lg={4}
                                         xl={3}
-                                        style={{display:"flex"}}
+                                        style={{ display: "flex" }}
                                     // style={{ padding: '20px' }}
                                     >
 
@@ -739,8 +739,8 @@ function LiveChat() {
                     className='mdl-cls'
                 >
                     <Box sx={style}>
-                        <div className="text-right clox cursor" style={{marginTop:"10px",marginRight:"10px"}}>
-                            <CancelIcon onClick={handleClose} sx={{ fill: '#009FF5' }} />
+                        <div className="text-right clox cursor" style={{ marginTop: "10px", marginRight: "10px" }}>
+                            <CancelIcon onClick={handleClose} sx={{ fill: 'var(--theme-color) ' }} />
                         </div>
                         <div className='Live-tet'>
                             Create Your Ticket

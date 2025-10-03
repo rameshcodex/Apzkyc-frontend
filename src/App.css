@@ -17,14 +17,14 @@ a {
 :root {
 
   /* Colors */
-  --color-Blue: #009FF5;
+  --color-Blue: var(--theme-color);
 
   /* / position / */
 
   --position-rel: relative;
   --position-abs: absolute;
   --position-fixed: fixed;
-
+  /* --theme-color: ; */
   /* / display property / */
 
   --flex: flex;

@@ -25,13 +25,13 @@ section.banner-sctn {
   padding: 16px 40px;
   text-decoration: none;
   border-radius: 8px;
-  color: var(--color-Blue);
-  border: 1px solid rgba(0, 159, 245, 1);
+  color: var(--theme-color);
+  border: 1px solid var(--theme-color);
   position: var(--position-rel);
 }
 
 .verfication-btn a:first-child {
-  background: rgba(0, 159, 245, 1);
+  background: var(--theme-color);
   color: #fff;
   display: var(--flex);
   gap: 10px;
@@ -44,7 +44,7 @@ section.banner-sctn {
 }
 
 .verfication-btn a:hover {
-  background: rgba(0, 159, 245, 1);
+  background: var(--theme-color);
   color: #fff;
 }
 
@@ -53,6 +53,7 @@ section.banner-sctn {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,

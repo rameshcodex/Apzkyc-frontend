@@ -546,7 +546,7 @@ function Overview() {
                 >
                     <Box sx={style}>
                         <div className="text-right clox cursor">
-                            <CancelIcon onClick={handleClose} sx={{ fill: '#009FF5' }} />
+                            <CancelIcon onClick={handleClose} sx={{ fill: 'var(--theme-color) ' }} />
                         </div>
                         <div className=" display-1 margin-top" style={{ flexFlow: 'wrap' }}>
                             <div className="activ-pl">

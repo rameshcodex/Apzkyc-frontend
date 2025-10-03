@@ -274,7 +274,7 @@ function UserInvoiceTable() {
                                                 <TableBody>
                                                     {clientLoading ? (<TableRow > <TableCell colSpan={7} style={{ textAlign: "center" }}>
                                                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100px' }}>
-                                                            <Triangle color="#009ff5" height={80} width={80} />
+                                                            <Triangle color="var(--theme-color) " height={80} width={80} />
                                                         </div>
                                                     </TableCell>  </TableRow>) : paginatedClientList.length > 0 ?
                                                         (paginatedClientList?.map((List, index) => (
@@ -291,7 +291,7 @@ function UserInvoiceTable() {
                                                                         variant="contained"
                                                                         className='view-btn' style={{
                                                                             color: "#fff",
-                                                                            backgroundColor: "#009ff5",
+                                                                            backgroundColor: "var(--theme-color) ",
                                                                             padding: "5px 5px",
                                                                             display: "flex",
                                                                             alignItems: "center",
@@ -426,7 +426,7 @@ function UserInvoiceTable() {
                             className="view-btn"
                             style={{
                                 color: "#fff",
-                                backgroundColor: "#009ff5",
+                                backgroundColor: "var(--theme-color) ",
                                 padding: "10px 5px",
                                 display: "flex",
                                 alignItems: "center",

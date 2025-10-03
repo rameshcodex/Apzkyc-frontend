@@ -575,7 +575,7 @@ export default function Compliance() {
                                 }}
                               >
                                 <Triangle
-                                  color="#009ff5"
+                                  color='var(--theme-color)'
                                   height={80}
                                   width={80}
                                 />
@@ -635,14 +635,14 @@ export default function Compliance() {
                                       className="view-btn"
                                       style={{
                                         color: "#fff",
-                                        backgroundColor: "#009ff5",
+                                        backgroundColor: 'var(--theme-color)',
                                         padding: "5px 5px",
                                         display: "flex",
                                         alignItems: "center",
                                         borderRadius: "5px",
                                         fontWeight: "bold",
                                         "&:hover": {
-                                          backgroundColor: "#007bb5",
+                                          backgroundColor: 'var(--theme-color)',
                                         },
                                       }}
                                       onClick={() => {
@@ -1025,11 +1025,11 @@ export default function Compliance() {
                           size="medium"
                           sx={{
                             borderRadius: "16px",
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
-                            borderColor: "primary.main",
-                            color: "primary.main",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
+                            borderColor: "var(--theme-color) ",
+                            color: "var(--theme-color) ",
                             "& .MuiChip-icon": {
-                              color: "primary.main",
+                              color: "var(--theme-color) ",
                             },
                           }}
                         />
@@ -1059,17 +1059,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <EmailIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1090,17 +1090,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <PhoneIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1121,17 +1121,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <LocationCityIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1152,17 +1152,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <HouseIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1183,17 +1183,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <OutlinedFlagIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1214,17 +1214,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <SignpostIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1245,17 +1245,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <FeaturedVideoIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1276,17 +1276,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <FeaturedVideoIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1307,17 +1307,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <FeaturedVideoIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1338,17 +1338,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <FeaturedVideoIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1370,17 +1370,17 @@ export default function Compliance() {
                           display: "flex",
                           alignItems: "center",
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
                         <ContactMailIcon
-                          sx={{ fontSize: 24, mr: 2, color: "primary.main" }}
+                          sx={{ fontSize: 24, mr: 2, color: "var(--theme-color) " }}
                         />
                         <Box>
                           <Typography
@@ -1401,16 +1401,16 @@ export default function Compliance() {
                           // display: 'flex',
                           // alignItems: 'center',
                           p: 2,
-                          bgcolor: "rgba(33, 150, 243, 0.05)",
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: "all 0.3s ease",
                           "&:hover": {
-                            bgcolor: "rgba(33, 150, 243, 0.1)",
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: "translateY(-2px)",
                           },
                         }}
                       >
-                        {/* <EmailIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} /> */}
+                        {/* <EmailIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color) ' }} /> */}
                         <Box>
                           <Typography
                             variant="caption"
@@ -1530,7 +1530,7 @@ export default function Compliance() {
                         left: 0,
                         width: 40,
                         height: 3,
-                        bgcolor: "primary.main",
+                        bgcolor: "var(--theme-color) ",
                         borderRadius: 1,
                       },
                     }}
@@ -1576,7 +1576,7 @@ export default function Compliance() {
                         left: 0,
                         width: 40,
                         height: 3,
-                        bgcolor: 'primary.main',
+                        bgcolor: 'var(--theme-color) ',
                         borderRadius: 1,
                       }
                     }}

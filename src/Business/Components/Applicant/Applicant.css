@@ -106,7 +106,7 @@
 }
 
 .apllicant-direct button {
-    background: #009FF5;
+    background: var(--theme-color);
     display: flex;
     gap: 4px;
     height: 43px;
@@ -380,7 +380,7 @@ label.check-status {
 }
 
 .viwedata {
-    color: #009FF5;
+    color: var(--theme-color);
     text-align: center;
     /* font-family: Inter; */
     font-size: var(--font-12);
@@ -420,7 +420,7 @@ label.check-status {
     font-weight: 500;
     line-height: 24px;
     border-radius: 4px;
-    background: var(--Primary-Primary, #009FF5) !important;
+    background: var(--Primary-Primary, var(--theme-color)) !important;
     padding: 8px 15px;
 }
 
@@ -451,7 +451,7 @@ label.check-status {
 }
 
 .appli-tab .MuiButtonBase-root.Mui-selected {
-    color: #009FF5;
+    color: var(--theme-color);
     text-align: center;
     font-family: Inter;
     font-size: 14px;
@@ -464,7 +464,7 @@ label.check-status {
 }
 
 .appli-tab .MuiTabs-indicator {
-    background: #009FF5;
+    background: var(--theme-color);
     bottom: 10px;
 }
 
@@ -632,7 +632,7 @@ label.check-status {
     line-height: 24px;
     /* 171.429% */
     border-radius: 8px;
-    background: #009FF5 !important;
+    background: var(--theme-color) !important;
     text-transform: capitalize;
 }
 
@@ -806,7 +806,7 @@ label.check-status {
     line-height: 24px;
     /* 171.429% */
     border-radius: 4px;
-    background: #009FF5 !important;
+    background: var(--theme-color) !important;
     padding: 7px 20px;
     text-transform: capitalize;
 }
@@ -899,7 +899,7 @@ label.check-status {
 }
 
 .applisearch input::placeholder {
-    color: var(--Primary-Primary, #009FF5);
+    color: var(--Primary-Primary, var(--theme-color));
     /* font-family: "Open Sans"; */
     font-size: 13.606px;
     font-style: normal;

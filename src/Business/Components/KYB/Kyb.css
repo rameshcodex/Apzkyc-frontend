@@ -8,7 +8,7 @@
     position: absolute;
     content: " ";
     width: 2px;
-    background-color: #009FF5;
+    background-color: var(--theme-color);
     left: 50%;
     margin-left: -1px;
 }
@@ -58,7 +58,7 @@
     right: 24px;
     font-size: 8em;
     font-weight: 700;
-    color: #009FF5;
+    color: var(--theme-color);
     opacity: 0.7;
     z-index: -1;
 }
@@ -72,7 +72,7 @@
 }
 
 .timeline .timeline-box:hover:after {
-    background: #009FF5;
+    background: var(--theme-color);
 }
 
 @media all and (min-width: 650px) {
@@ -86,7 +86,7 @@
         position: absolute;
         right: -6.55%;
         top: 1.5em;
-        border: 2px solid #009FF5;
+        border: 2px solid var(--theme-color);
     }
 }
 
@@ -144,9 +144,9 @@
 
 .timeline-box:hover,
 .timeline-box:focus {
-    -webkit-box-shadow: 0px 3px 0px 0px #009FF5;
-    -moz-box-shadow: 0px 3px 0px 0px #009FF5;
-    box-shadow: 0px 3px 0px 0px #009FF5;
+    -webkit-box-shadow: 0px 3px 0px 0px var(--theme-color);
+    -moz-box-shadow: 0px 3px 0px 0px var(--theme-color);
+    box-shadow: 0px 3px 0px 0px var(--theme-color);
 }
 
 .timeline-box {
@@ -490,7 +490,7 @@
     margin: 0;
 }
 
-.loader2 {
+.loader {
     color: rgb(82, 75, 75);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -516,10 +516,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(var(--bg-color) 10%,
-            transparent 30%,
-            transparent 70%,
-            var(--bg-color) 90%);
+    background: var(--theme-color);
     z-index: 20;
 }
 
@@ -527,7 +524,7 @@
     display: block;
     height: 100%;
     padding-left: 6px;
-    color: #009FF5;
+    color: var(--theme-color);
     animation: spin_4991 4s infinite;
 }
 
@@ -615,7 +612,7 @@
 }
 
 .upld-brd:hover {
-    border-color: #009FF5 !important;
+    border-color: var(--theme-color) !important;
 }
 
 .upld-img img {

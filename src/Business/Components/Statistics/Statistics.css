@@ -124,7 +124,7 @@
 }
 
 .analytic-head-theme {
-    color: var(--Primary-Primary, #009FF5);
+    color: var(--theme-color);
     font-family: Inter;
     font-size: 16px;
     font-weight: 700;
@@ -145,7 +145,7 @@
 }
 
 .bdr-blue {
-    border: 1px solid var(--Primary-Primary, #009FF5);
+    border: 1px solid var(--Primary-Primary, var(--theme-color));
 }
 
 .bdr-red {

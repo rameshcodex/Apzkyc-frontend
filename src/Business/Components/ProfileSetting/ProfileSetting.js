@@ -1811,7 +1811,7 @@ export default function ProfileSetting() {
                       verifyLoad ?
                         <Button variant="contained" >Processing...</Button>
                         :
-                        <Button variant="contained" onClick={() => { verify2FA() }}>Verify</Button>
+                        <Button variant="contained" onClick={() => { verify2FA() }} sx={{ bgcolor: "var(--theme-color)" }}>Verify</Button>
                     }
                   </div>
                 </div>

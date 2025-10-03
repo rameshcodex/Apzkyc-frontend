@@ -8,7 +8,7 @@
 } */
 .add-list-btn {
     border-radius: 3.61px !important;
-    background: var(--Primary-Primary, #009FF5) !important;
+    background: var(--theme-color) !important;
     color: #FFF !important;
 }
 
@@ -19,10 +19,13 @@
     line-height: 21.662px !important;
     text-transform: math-auto !important;
 }
-.select-item-list.email-field, .email-field .MuiInputBase-root {
+
+.select-item-list.email-field,
+.email-field .MuiInputBase-root {
     height: 39px;
     margin-bottom: 0 !important;
 }
+
 .import-btn {
     color: #373D4D !important;
     border-radius: 3.61px !important;
@@ -146,7 +149,7 @@
 
 .action-btn {
     border-radius: 5px !important;
-    background: #2E74FF !important;
+    background: var(--theme-color) !important;
     cursor: not-allowed !important;
     text-transform: capitalize !important;
     pointer-events: auto !important;
@@ -154,7 +157,7 @@
 
 .createList-popup .email-field fieldset:focus-visible,
 .createList-popup .email-field fieldset:focus-visible {
-    border: 1px solid #1976d2 !important;
+    border: 1px solid var(--theme-color) !important;
     border-radius: 7px !important;
     outline: 0 !important;
 }
@@ -175,7 +178,7 @@
 }
 
 .select-item-list input:focus {
-    border: 2px solid #009ff5;
+    border: 2px solid var(--theme-color);
 }
 
 .createList-popup .MuiFormControl-root {
@@ -188,8 +191,8 @@
     margin-bottom: 13px;
 }
 
-.clientList-body .Mui-focused fieldset{
-    border: 1px solid #1976d2 ;
+.clientList-body .Mui-focused fieldset {
+    border: 1px solid var(--theme-color);
 }
 
 .clientList-body .MuiSelect-outlined {
@@ -251,7 +254,7 @@ section.invoice-sec {
     padding-top: 40px;
 }
 
-section.invoice-sec .pad{
+section.invoice-sec .pad {
     padding: 20px;
 }
 
@@ -263,18 +266,20 @@ section.invoice-sec p {
 section.invoice-sec .invoice-title {
     position: relative;
     padding: 20px;
-    background: #009ff5;
+    background: var(--theme-color);
     position: fixed;
     width: calc(100% + 0px);
     left: 0px;
     right: 0;
     top: 0;
 }
-section.invoice-sec .invoice-title svg{
+
+section.invoice-sec .invoice-title svg {
     filter: invert(1);
     top: 6px;
     right: 15px;
 }
+
 section.invoice-sec .invoice-title .h2tag {
     font-size: 30px;
     text-transform: uppercase;
@@ -292,7 +297,7 @@ section.invoice-sec .invoice-title .h2tag {
     width: 800px;
     height: fit-content;
 } */
-section.invoice-sec .flx_inv{
+section.invoice-sec .flx_inv {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #949597;
@@ -300,22 +305,27 @@ section.invoice-sec .flx_inv{
     padding-bottom: 20px;
     margin-bottom: 15px;
 }
-section.invoice-sec h5{
+
+section.invoice-sec h5 {
     font-size: 18px;
     font-weight: 500;
 }
-section.invoice-sec h6{
-    font-size: 16px; 
+
+section.invoice-sec h6 {
+    font-size: 16px;
 }
-section.invoice-sec .h2tag{
+
+section.invoice-sec .h2tag {
     font-size: 30px;
     font-weight: 500;
     line-height: 30px;
 }
-.details-blocks{
+
+.details-blocks {
     padding-top: 10px;
-    border-top:1px solid #837c7c;
+    border-top: 1px solid #837c7c;
 }
+
 .details-blocks table thead tr th {
     border: none;
 }
@@ -337,23 +347,27 @@ section.invoice-sec .h2tag{
 .details-blocks table tbody {
     border: #fff;
 }
-.clo_se{
+
+.clo_se {
     position: absolute;
     right: 0px;
     top: 0px;
     cursor: pointer;
 }
+
 /* .details-blocks,
 .payment-info,
 .powered-by {
     margin-top: clamp(30px, 5vw, 60px);
 } */
-.invoice-table{
+.invoice-table {
     overflow-x: auto;
 }
-.in_pad{
+
+.in_pad {
     padding: 15px;
 }
+
 .details-blocK p span,
 .payment-info-block p {
     font-weight: 600 !important;
@@ -385,7 +399,8 @@ section.invoice-sec .h2tag{
 .invoice-table table td span {
     color: #0047ff;
 }
-.invoice-table table th:first-child{
+
+.invoice-table table th:first-child {
     padding-left: 0;
 }
 
@@ -411,7 +426,7 @@ section.invoice-sec .h2tag{
 
 .invoice-table table th {
     padding: 3px;
-    border-bottom:1px solid #837c7c;
+    border-bottom: 1px solid #837c7c;
     text-transform: uppercase;
 }
 

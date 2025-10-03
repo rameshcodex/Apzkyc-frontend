@@ -16,9 +16,11 @@
     overflow-y: scroll;
 
 }
-.m-0{
-    margin:0 !important;
+
+.m-0 {
+    margin: 0 !important;
 }
+
 .bxshade {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 15px;
@@ -175,7 +177,7 @@
 }
 
 .active.display-2 {
-    background: #009FF5;
+    background: var(--theme-color);
     margin: 15px 0px;
     padding: 15px;
     border-radius: 12px;

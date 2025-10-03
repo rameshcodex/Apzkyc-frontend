@@ -97,11 +97,11 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 const btnStyle = {
   color: "#fff",
-  backgroundColor: "#009ff5",
+  backgroundColor: 'var(--theme-color)',
   padding: "5px 10px",
   fontWeight: "bold",
   '&:hover': {
-    backgroundColor: "#007bb5",
+    backgroundColor: 'var(--theme-color)',
   },
   textTransform: "capitalize",
 
@@ -707,7 +707,7 @@ export default function ClientLists() {
                                     height: "100px",
                                   }}
                                 >
-                                  <Triangle color="#009ff5" height={80} width={80} />
+                                  <Triangle color='var(--theme-color)' height={80} width={80} />
                                 </div>
                               </TableCell>
                             </TableRow>
@@ -782,7 +782,7 @@ export default function ClientLists() {
                                           variant="contained"
                                           className='view-btn' style={{
                                             color: "#fff",
-                                            backgroundColor: "#009ff5",
+                                            backgroundColor: 'var(--theme-color)',
                                             padding: "5px 5px",
                                             display: "flex",
                                             alignItems: "center",
@@ -790,7 +790,7 @@ export default function ClientLists() {
                                             fontWeight: "bold",
                                             textTransform: "capitalize",
                                             '&:hover': {
-                                              backgroundColor: "#007bb5",
+                                              backgroundColor: 'var(--theme-color)',
                                             }
                                           }}
                                           onClick={() => {
@@ -1132,11 +1132,11 @@ export default function ClientLists() {
                             size="medium"
                             sx={{
                               borderRadius: '16px',
-                              bgcolor: 'rgba(33, 150, 243, 0.1)',
-                              borderColor: 'primary.main',
-                              color: 'primary.main',
+                              bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
+                              borderColor: 'var(--theme-color)',
+                              color: 'var(--theme-color)',
                               '& .MuiChip-icon': {
-                                color: 'primary.main',
+                                color: 'var(--theme-color)',
                               },
                             }}
                           />
@@ -1169,15 +1169,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          <EmailIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          <EmailIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               Email
@@ -1193,15 +1193,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          <PhoneIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          <PhoneIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               Phone
@@ -1217,15 +1217,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          < LocationCityIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          < LocationCityIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               City
@@ -1241,15 +1241,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          <HouseIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          <HouseIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               State
@@ -1265,15 +1265,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          < OutlinedFlagIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          < OutlinedFlagIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               Country
@@ -1289,15 +1289,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          <SignpostIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          <SignpostIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               Postalcode
@@ -1313,15 +1313,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          <FeaturedVideoIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          <FeaturedVideoIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               ID Country
@@ -1337,15 +1337,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          <FeaturedVideoIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          <FeaturedVideoIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               ID Type
@@ -1361,15 +1361,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          <FeaturedVideoIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          <FeaturedVideoIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               ID Number
@@ -1385,15 +1385,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          <FeaturedVideoIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          <FeaturedVideoIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               API ID
@@ -1410,15 +1410,15 @@ export default function ClientLists() {
                           display: 'flex',
                           alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          <ContactMailIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} />
+                          <ContactMailIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} />
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                               Address
@@ -1434,15 +1434,15 @@ export default function ClientLists() {
                           // display: 'flex',
                           // alignItems: 'center',
                           p: 2,
-                          bgcolor: 'rgba(33, 150, 243, 0.05)',
+                          bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                           borderRadius: 2,
                           transition: 'all 0.3s ease',
                           '&:hover': {
-                            bgcolor: 'rgba(33, 150, 243, 0.1)',
+                            bgcolor: 'color-mix(in srgb, var(--theme-color) 30%, transparent)',
                             transform: 'translateY(-2px)',
                           }
                         }}>
-                          {/* <EmailIcon sx={{ fontSize: 24, mr: 2, color: 'primary.main' }} /> */}
+                          {/* <EmailIcon sx={{ fontSize: 24, mr: 2, color: 'var(--theme-color)' }} /> */}
                           <Box>
                             <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 700, fontSize: '20px' }}>
                               Verification Check
@@ -1503,7 +1503,7 @@ export default function ClientLists() {
                           left: 0,
                           width: 40,
                           height: 3,
-                          bgcolor: 'primary.main',
+                          bgcolor: 'var(--theme-color)',
                           borderRadius: 1,
                         }
                       }}
@@ -1549,7 +1549,7 @@ export default function ClientLists() {
                           left: 0,
                           width: 40,
                           height: 3,
-                          bgcolor: 'primary.main',
+                          bgcolor: 'var(--theme-color)',
                           borderRadius: 1,
                         }
                       }}

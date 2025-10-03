@@ -1100,8 +1100,8 @@ export default function SubAdmin() {
                       </BootstrapDialog>
                     </div>
                   </div>
-                  <div className='user-body-div1' style={{paddingTop:"10px"}}>
-                    <div className="display-1" style={{flexWrap:"wrap",alignItems:"center",width:"100%"}} >
+                  <div className='user-body-div1' style={{ paddingTop: "10px" }}>
+                    <div className="display-1" style={{ flexWrap: "wrap", alignItems: "center", width: "100%" }} >
                       <LocalizationProvider dateAdapter={AdapterDayjs}>
                         <Box
                           sx={{
@@ -1152,10 +1152,10 @@ export default function SubAdmin() {
                         </Box>
                       </LocalizationProvider>
                       <div className='display-1' >
-                      <SearchIcon className='cursor' onClick={() => { handleSearch() }} />
-                      {/* <Button className='view-btn' >Search</Button> */}
-                      <RestoreIcon className='cursor' onClick={() => { handleReset() }} />
-                      </div>  
+                        <SearchIcon className='cursor' onClick={() => { handleSearch() }} />
+                        {/* <Button className='view-btn' >Search</Button> */}
+                        <RestoreIcon className='cursor' onClick={() => { handleReset() }} />
+                      </div>
 
                       {/* <Button className='view-btn-reset' >Reset</Button> */}
                     </div>
@@ -1178,7 +1178,7 @@ export default function SubAdmin() {
                         <TableBody>
                           {AdminLoading ? (<TableRow > <TableCell colSpan={7} style={{ textAlign: "center" }}>
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100px' }}>
-                              <Triangle color="#009ff5" height={80} width={80} />
+                              <Triangle color="var(--theme-color) " height={80} width={80} />
                             </div>
                           </TableCell>  </TableRow>) : paginatedSubAdminList.length > 0 ?
                             (paginatedSubAdminList?.map((row, index) => (
@@ -1293,7 +1293,7 @@ export default function SubAdmin() {
                 onClick={handleClose}
                 className='icon_close'
                 sx={{
-                  marginTop:"15px",
+                  marginTop: "15px",
                   bgcolor: 'rgba(0,0,0,0.05)',
                   '&:hover': {
                     bgcolor: 'rgba(0,0,0,0.1)',

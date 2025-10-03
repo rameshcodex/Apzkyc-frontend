@@ -1,4 +1,11 @@
+import Logo from '../src/Images/logo.png';
+
 var consts = {
+    /*Dynamic Title Logo & Color */
+    pageTitle: "White Paper",
+    projectLogo: Logo,
+    projectTheme: "rgba(100, 31, 212, 1)",
+
     // MainUrl: "http://localhost:3000",
     // BackendUrl: "http://localhost:3500/apzkyc",
     // successurl: "http://localhost:3000/check",

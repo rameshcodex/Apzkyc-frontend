@@ -1052,7 +1052,7 @@ function Kybstatus() {
                                     </div>
                                 </div>
                             </Backdrop>
-
+                            {/* 
                             <Backdrop
                                 sx={(theme) => ({ color: '#fff', zIndex: theme.zIndex.drawer + 1, backdropFilter: 'blur(5px)' })}
                                 open={apiCallStatus}
@@ -1070,7 +1070,7 @@ function Kybstatus() {
                                         <span class="d2">.</span>
                                     </div>
                                 </div>
-                            </Backdrop>
+                            </Backdrop> */}
                         </Box> :
                         <Box
                             component="main"
