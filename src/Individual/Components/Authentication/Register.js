@@ -21,6 +21,8 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputAdornment from '@mui/material/InputAdornment';
 import { decryptData } from '../../../middleware';
+import consts from '../../../constant';
+
 
 const Register = () => {
 
@@ -124,7 +126,7 @@ const Register = () => {
                         <div className="login-left-part">
                             <div className="logo-part">
                                 <Link to='/'>
-                                    <img src={Apzykyc} alt="Apzykyc" />
+                                    <img src={consts.projectRegister} alt="Apzykyc" />
                                 </Link>
 
                             </div>

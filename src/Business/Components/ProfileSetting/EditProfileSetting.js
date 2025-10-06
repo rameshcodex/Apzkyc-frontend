@@ -507,7 +507,7 @@ export default function EditProfileSetting() {
                               </FormControl>
                             </div>
                             <div style={{ textAlign: "center" }} >
-                              <Button style={{ color: "white" }} disabled={passStatus} onClick={() => { changePassword() }} variant='contained'>Update</Button>
+                              <Button style={{ color: "white" }} disabled={passStatus} onClick={() => { changePassword() }} variant='contained' className='common-theme-btn'>Update</Button>
                             </div>
                           </div>
                         </div>

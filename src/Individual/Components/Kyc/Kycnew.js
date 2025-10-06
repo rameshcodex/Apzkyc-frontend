@@ -1559,11 +1559,13 @@ const handleCroppedImage = async (val) => {
                                             </ul>
                                         </Grid>
                                         <Button
-                                            variant="contained"
+                                            // variant="contained"
                                             // onClick={activeStep === steps.length - 1 ? handleReset : handleNext}
                                             // disabled={uploadSts}
+                                            className='common-theme-btn'
                                             onClick={handleNextStep}
                                             sx={{ mt: 1, ml: 'auto' }}
+                                            
                                         >
                                             Submit
                                         </Button>

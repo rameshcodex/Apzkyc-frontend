@@ -19,6 +19,8 @@ import toast from 'react-hot-toast';
 import Axios from '../../../Axios';
 import { Button } from '@mui/material';
 import { encryptData, decryptData } from '../../../middleware'
+import consts from '../../../constant';
+
 const Login = () => {
 
     useEffect(() => {
@@ -99,7 +101,7 @@ const Login = () => {
                         <div className="login-left-part">
                             <div className="logo-part">
                                 <Link to='/'>
-                                    <img src={Apzykyc} alt="Apzykyc" />
+                                    <img src={consts.projectRegister} alt="Apzykyc" />
                                 </Link>
 
                             </div>
@@ -115,7 +117,7 @@ const Login = () => {
                         </div>
                         <div className='login-grid'>
                             <h1 className='cracct'>Login <span>✌</span></h1>
-                            <p className='cracct-desc'>Thank you for get back to APZKYC.</p>
+                            <p className='cracct-desc'>Thank you for get back to {consts.pageTitle}.</p>
 
                             <div className="individual-form">
                                 <div className='email-filed phr'>

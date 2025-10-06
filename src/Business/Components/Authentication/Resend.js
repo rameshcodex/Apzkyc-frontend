@@ -15,6 +15,7 @@ import { Button } from '@mui/material';
 import Axios from '../../../Axios';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import toast from 'react-hot-toast';
+import consts from '../../../constant';
 
 const Resend = () => {
     const [showPassword, setShowPassword] = React.useState(false);
@@ -67,7 +68,7 @@ const Resend = () => {
                             </div>
 
                             <div className='logo-bar'>
-                                <Link to="/"><img src={Logo} />
+                                <Link to="/"><img src={consts.projectLogo} />
                                 </Link>
                             </div>
                             <div className='padding-10 text-center'>Resend Verification Mail</div>

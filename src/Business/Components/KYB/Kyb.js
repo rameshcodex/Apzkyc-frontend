@@ -535,11 +535,11 @@ function Kyb() {
                                             {companyAddressImg && <Button
                                                 component="label"
                                                 role={undefined}
-                                                className='upld-btn'
+                                                // className='upld-btn'
                                                 variant='contained'
                                                 tabIndex={-1}
                                                 startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important" }} />}
-
+                                                className='common-theme-btn'
                                                 sx={{ textTransform: "capitalize !important" }}
                                             >
                                                 <div >
@@ -565,11 +565,11 @@ function Kyb() {
                                                 className='upld-btn'
                                                 // variant={companyAddressImg ? "contained" : null}
                                                 tabIndex={-1}
-                                                startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important" }} />}
+                                                startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important",color:"var(--theme-color)" }} />}
 
                                                 sx={{ width: "100% !important", height: "100% !important", textTransform: "capitalize !important", display: companyAddressImg ? "none" : "flex" }}
                                             >
-                                                <div >
+                                                <div className='common-theme-clr'>
                                                     Upload here
                                                 </div>
 
@@ -590,10 +590,9 @@ function Kyb() {
                                             {vatImg && <Button
                                                 component="label"
                                                 role={undefined}
-                                                variant="contained"
                                                 tabIndex={-1}
                                                 startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important" }} />}
-
+                                                className='common-theme-btn'
                                                 sx={{ textTransform: "capitalize !important" }}
                                             >
                                                 <div >
@@ -624,11 +623,11 @@ function Kyb() {
                                                 role={undefined}
                                                 // variant="contained"
                                                 tabIndex={-1}
-                                                startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important" }} />}
+                                                startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important",color:"var(--theme-color)" }} />}
 
                                                 sx={{ width: "100% !important", height: "100% !important", textTransform: "capitalize !important", display: vatImg ? "none" : "flex" }}
                                             >
-                                                <div >
+                                                <div className='common-theme-clr'>
                                                     Upload here
                                                 </div>
 
@@ -651,7 +650,7 @@ function Kyb() {
                                                 variant="contained"
                                                 tabIndex={-1}
                                                 startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important" }} />}
-
+                                                className='common-theme-btn'
                                                 sx={{ textTransform: "capitalize !important" }}
                                             >
                                                 <div >
@@ -680,11 +679,11 @@ function Kyb() {
                                                 role={undefined}
                                                 // variant="contained"
                                                 tabIndex={-1}
-                                                startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important" }} />}
+                                                startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important",color:"var(--theme-color)" }} />}
 
                                                 sx={{ width: "100% !important", height: "100% !important", textTransform: "capitalize !important", display: bankImg ? "none" : "flex" }}
                                             >
-                                                <div >
+                                                <div className='common-theme-clr'>
                                                     Upload here
                                                 </div>
 
@@ -702,10 +701,10 @@ function Kyb() {
                                             {itImg && <Button
                                                 component="label"
                                                 role={undefined}
-                                                variant="contained"
+                                                // variant="contained"
                                                 tabIndex={-1}
                                                 startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important" }} />}
-
+                                                className='common-theme-btn'
                                                 sx={{ textTransform: "capitalize !important" }}
                                             >
                                                 <div >
@@ -735,11 +734,11 @@ function Kyb() {
                                                 role={undefined}
                                                 // variant="contained"
                                                 tabIndex={-1}
-                                                startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important" }} />}
+                                                startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important",color:"var(--theme-color)" }} />}
 
                                                 sx={{ width: "100% !important", height: "100% !important", textTransform: "capitalize !important", display: itImg ? "none" : "flex" }}
                                             >
-                                                <div >
+                                                <div className='common-theme-clr'>
                                                     Upload here
                                                 </div>
 
@@ -759,10 +758,11 @@ function Kyb() {
                                             {direcorImg.length > 0 && <Button
                                                 component="label"
                                                 role={undefined}
-                                                variant="contained"
+                                                // variant="contained"
                                                 tabIndex={-1}
                                                 startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important" }} />}
                                                 sx={{ textTransform: "capitalize !important" }}
+                                                className='common-theme-btn'
 
                                             >
                                                 <div >
@@ -823,11 +823,11 @@ function Kyb() {
                                                         role={undefined}
                                                         // variant="contained"
                                                         tabIndex={-1}
-                                                        startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important" }} />}
+                                                        startIcon={<CloudUploadIcon sx={{ fontSize: "30px !important",color: "var(--theme-color)" }} />}
 
                                                         sx={{ width: "100% !important", height: "100% !important", textTransform: "capitalize !important", display: "flex" }}
                                                     >
-                                                        <div >
+                                                        <div className='common-theme-clr'>
                                                             Upload here
                                                         </div>
 

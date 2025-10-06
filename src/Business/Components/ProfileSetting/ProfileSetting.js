@@ -1365,7 +1365,7 @@ export default function ProfileSetting() {
               {
                 usertype === 'organization' ?
                   <div className="create-modal text-end">
-                    <Button variant="contained" onClick={checkExpiry}>Create</Button>
+                    <Button  className="common-theme-btn" onClick={checkExpiry}>Create</Button>
                   </div> :
                   subAdminDetails?.access?.apikey_edit == true ?
                     PlanStatus &&
@@ -1450,6 +1450,8 @@ export default function ProfileSetting() {
                                 //  onChange={editkey(row) }
                                 disabled={checked}
                                 onClick={() => editkey(row)}
+                                  className="custom-switch"
+
                               />
 
                             </div>
@@ -1782,7 +1784,7 @@ export default function ProfileSetting() {
                       handleCopy();
                     }}
                   >
-                    <ContentCopyIcon />
+                    <ContentCopyIcon  sx={{color: "var(--theme-color)"}}/>
                   </Button>
                   {copied && (
                     <Typography

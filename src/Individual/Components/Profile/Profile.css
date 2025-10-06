@@ -44,7 +44,7 @@
 
 .upd-btn label,
 .upd-btn button {
-    background-color: #1B7CE5 !important;
+    background-color: var(--theme-color)!important;
     color: #fff;
     text-transform: capitalize;
 }

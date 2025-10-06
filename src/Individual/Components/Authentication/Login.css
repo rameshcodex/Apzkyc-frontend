@@ -1,5 +1,5 @@
 .login-left-part {
-  background: rgba(27, 124, 229, 1);
+  background: var(--theme-color);
   height: 100%;
   padding: 25px;
   position: relative;
@@ -41,11 +41,14 @@
 }
 
 .individual-submit button {
-  background: #1b7ce5;
+  background: var(--theme-color);
   color: #fff;
   border-radius: 4px;
   width: fit-content;
   padding: 12px 45px;
+}
+.individual-submit button:hover{
+  background: rgba(100, 31, 212, 0.716);
 }
 
 .invalid-error p {

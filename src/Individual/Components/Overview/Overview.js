@@ -28,6 +28,8 @@ import Axios from '../../../Axios';
 import moment from 'moment';
 import Pagination from '@mui/material/Pagination';
 import document from '../../../Images/document.png'
+import consts from '../../../constant';
+
 
 function createData(name, calories, fat, carbs, protein) {
     return { name, calories, fat, carbs, protein };
@@ -194,7 +196,7 @@ function Overview() {
                 <div className="">
                     <div className="display-2 dashmain">
                         <div className="getstar display-1" style={{ flexDirection: !mobileUp && 'column' }}>
-                            Get started with APZKYC
+                            Get started with {consts.pageTitle}
                         </div>
                         {!open && <div >
 

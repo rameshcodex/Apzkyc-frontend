@@ -58,6 +58,8 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { useTheme } from '@mui/material/styles';
 import { decryptData } from '../../../middleware';
+import consts from '../../../constant';
+
 
 const rows = [
     { img: `${Card1}`, text: 'Crypto', para: 'Access your data on any of your Mac, iPhone, and iPad at any time' },
@@ -404,7 +406,7 @@ const Landing = () => {
                             <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                                 <h2>Verify anything,
                                     expand anywhere</h2>
-                                <p>The entire world is at your fingertips. With apzkyc
+                                <p>The entire world is at your fingertips. With  {consts.pageTitle}{' '} 
                                     AI-based OCR, no document type, country, or
                                     typescript will stop you from growing business abroad.</p>
                                 <div className='verfify-img'>

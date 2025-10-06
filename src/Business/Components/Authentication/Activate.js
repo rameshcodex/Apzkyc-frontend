@@ -6,6 +6,8 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Logo from '../../../Images/logo.png';
 import Axios from '../../../Axios';
 import toast from 'react-hot-toast';
+import consts from '../../../constant';
+
 
 const Activate = () => {
 
@@ -87,12 +89,12 @@ const Activate = () => {
                     </div>
 
                     <div className='logo-bar'>
-                        <Link to="/"><img src={Logo} />
+                        <Link to="/"><img src={consts.projectLogo} />
                         </Link>
 
                     </div>
                     <h1>Activate your account</h1>
-                    <p>We've sent you a confirmation code via email <Link style={{ margin: '0 5px' }} to="">  no-reply@apzkyc.com</Link>
+                    <p>We've sent you a confirmation code via email <Link style={{ margin: '0 5px' }} to="">  no-reply@{consts.titleMail}.com</Link>
                         Please enter it below</p>
                     <div className='textfield'>
                         {/* <form onSubmit={handleSubmit}> */}

@@ -105,7 +105,7 @@
 }
 
 .profile-tab-update-inner button {
-    color: #1764FF;
+    color: var(--theme-color);
     text-align: center;
     font-family: Inter;
     font-size: 12.583px;
@@ -122,8 +122,8 @@
 }
 
 .enabled-button {
-    border: 1px solid #008000 !important;
-    color: #008000 !important;
+    border: 1px solid var(--theme-color) !important;
+    color: var(--theme-color) !important;
     padding: 6px 8px !important;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .edit_btn a {
-    color: #19BC9B;
+    color: var(--theme-color);
     text-align: center;
     font-size: 13px;
     font-style: normal;
@@ -187,7 +187,7 @@
 }
 
 .change_pic label {
-    color: #1764FF;
+    color: var(--theme-color);
     text-align: center;
     font-size: 12.583px;
     font-style: normal;
@@ -363,3 +363,16 @@
     margin: 0;
     width: 48%;
 }
+.custom-switch .MuiSwitch-switchBase.Mui-checked {
+  color: var(--theme-color); 
+}
+
+.custom-switch .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+  background-color: var(--theme-color); 
+}
+
+.custom-switch .MuiSwitch-track {
+  background-color: var(--theme-color);
+}
+
+

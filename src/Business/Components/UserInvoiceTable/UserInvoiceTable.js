@@ -27,6 +27,7 @@ import RestoreIcon from '@mui/icons-material/Restore';
 import Modal from '@mui/material/Modal';
 import apx from '../../../Images/apzlogo.png'
 import { downloadPdf } from "pdf-simplifier";
+import consts  from '../../../constant';
 
 
 const style = {
@@ -355,7 +356,7 @@ function UserInvoiceTable() {
                             <div className="pad">
                                 <div className="flx_inv">
                                     <div>
-                                        <img src={apx} alt="apx" style={{ maxWidth: "60px" }} />
+                                        <img src={consts.projectLogo} alt="apx" style={{ maxWidth: "60px" }} />
                                         <h2 className="h2tag">Invoice</h2>
                                     </div>
                                     <div style={{ textAlign: "right" }}>

@@ -1261,7 +1261,7 @@ export default function SubAdmin() {
               background: '#fff',
               zIndex: 100,
               position: 'sticky',
-              top: '-35px',
+              top: '-30px',
 
               // mt: -3,
               backdropFilter: 'blur(5px)',

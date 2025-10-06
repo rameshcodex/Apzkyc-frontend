@@ -20,6 +20,7 @@ import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutli
 import { decryptData } from '../../../middleware';
 import Axios from '../../../Axios';
 import toast from 'react-hot-toast';
+import consts from '../../../constant';
 const SignUp = () => {
 
     useEffect(() => {
@@ -127,10 +128,10 @@ const SignUp = () => {
         <div className='login-full reg' style={{ height: '100vh', overflow: 'hidden' }}>
             <div className='login-bg'>
                 <div className='logo-bar'>
-                    <Link to="/"><img src={Logo} />
+                    <Link to="/"><img src={consts.projectLogo} />
                     </Link>
                 </div>
-                <h1>Welcome to APZKYC</h1>
+                <h1>Welcome to {consts.pageTitle}</h1>
                 <p>Already have an account? <Link style={{ marginLeft: "5px" }} to="/login">Log in</Link></p>
                 <div className='textfield'>
                     <div className='email-filed'>
@@ -252,7 +253,7 @@ const SignUp = () => {
                             <Button onClick={() => { handleSubmit() }} >Continue</Button>
                         </div>
                         <div className='copy-rght'>
-                            <p>Apzkyc Ltd 2024. All rights reserved.</p>
+                            <p>{consts.pageTitle} Ltd 2024. All rights reserved.</p>
                             <Link>Cookie preferences, </Link>
                             <Link>Privacy, </Link>
                             <Link>Terms.</Link>
@@ -276,7 +277,7 @@ const SignUp = () => {
                             APZKYC's <Link to="">Terms and Conditions</Link> and <Link>Privacy Notice</Link> </p>
                     </div> */}
                     <div className='copy-rght'>
-                        <p>Apzkyc Ltd 2024. All rights reserved.</p>
+                        <p>{consts.pageTitle} Ltd 2024. All rights reserved.</p>
                         <Link>Cookie preferences, </Link>
                         <Link>Privacy, </Link>
                         <Link>Terms.</Link>

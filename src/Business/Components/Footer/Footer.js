@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 import XIcon from '@mui/icons-material/X';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import consts from '../../../constant';
 
 import apx from '../../../Images/apzlogo.png'
 
@@ -21,7 +22,7 @@ const Footer = () => {
 
 
                         <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
-                            <div className='logo-part2'><Link to='/'><img src={apx} /></Link></div>
+                            <div className='logo-part2'><Link to='/'><img src={consts.projectFooter} /></Link></div>
                         </Grid>
 
                         <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>

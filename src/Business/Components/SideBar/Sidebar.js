@@ -41,6 +41,7 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import Plans from '../../../Images/plan.gif'
 import { AssuredWorkload } from '@mui/icons-material';
+import consts from '../../../constant';
 
 const AntSwitch = styled(Switch)(({ theme }) => ({
     width: 28,
@@ -432,7 +433,7 @@ export default function Sidebar({ statuss }) {
                 <div className='cursor' onClick={() => { navigate('/dashboard') }} >
                     {/* {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />} */}
                     <div className="apxlogo">
-                        <img src={apx} alt="apx" />
+                        <img src={consts.projectLogo} alt="apx" />
                     </div>
                 </div>
             </DrawerHeader>

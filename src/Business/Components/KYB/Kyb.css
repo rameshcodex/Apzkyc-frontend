@@ -426,12 +426,12 @@
 .save button {
     font-family: inherit;
     font-size: 17px;
-    background: #212121;
+    background: var(--theme-color);
     margin: auto;
     /* margin-left: auto; */
     text-transform: capitalize;
     color: white;
-    fill: rgb(155, 153, 153);
+    fill: rgb(243, 243, 243);
     padding: 0.7em 1em;
     padding-left: 0.9em;
     display: flex;
@@ -455,7 +455,7 @@
 }
 
 .save button:hover {
-    background: #000;
+    background: rgba(100, 31, 212, 1);
 }
 
 .save button:hover .svg-wrapper {
@@ -620,6 +620,9 @@
     height: 350px;
     border-radius: 12px;
     padding: 5px;
+}
+.common-theme-clr{
+    color: var(--theme-color) !important;
 }
 
 /* .upld-brd:hover .upld-btn {

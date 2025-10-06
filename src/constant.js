@@ -1,10 +1,21 @@
 import Logo from '../src/Images/logo.png';
+import LogoDashborad from '../src/Images/apzkyc.png';
+import Apzykyc from '../src/Images/individual/apzkyc-logo.png';
+import footerlogo from '../src/Images/apzlogo.png'
+
+
 
 var consts = {
-    /*Dynamic Title Logo & Color */
-    pageTitle: "White Paper",
-    projectLogo: Logo,
+    /*Dynamic Title  & Color */
+    pageTitle: "Apzkyc",
+    titleMail: "apzkyc",
     projectTheme: "rgba(100, 31, 212, 1)",
+    //Dynamic logo
+    projectLogo: Logo,
+    projectDashborad: LogoDashborad,
+    projectRegister: Apzykyc,
+    projectFooter: footerlogo,
+    
 
     // MainUrl: "http://localhost:3000",
     // BackendUrl: "http://localhost:3500/apzkyc",

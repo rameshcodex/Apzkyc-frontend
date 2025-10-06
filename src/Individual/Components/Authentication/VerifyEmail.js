@@ -16,6 +16,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import TextField from '@mui/material/TextField';
 import Axios from '../../../Axios';
 import toast from 'react-hot-toast';
+import consts from '../../../constant';
 
 
 function CreatePswd() {
@@ -71,7 +72,7 @@ function CreatePswd() {
                     <div className="login-left-part">
                         <div className="logo-part text-center">
                             <Link to='/'>
-                                <img src={Apzykyc} alt="Apzykyc" />
+                                <img src={consts.projectRegister} alt="Apzykyc" />
                             </Link>
 
                         </div>

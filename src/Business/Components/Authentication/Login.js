@@ -17,6 +17,8 @@ import Axios from '../../../Axios';
 import toast, { Toaster } from 'react-hot-toast';
 import { encryptData } from '../../../middleware'
 import { decryptData } from '../../../middleware';
+import consts from '../../../constant';
+
 
 const Login = () => {
 
@@ -123,7 +125,7 @@ const Login = () => {
                         <div className='signin-left'>
                             <h2>Scale globally with the highest
                                 pass rates on the market</h2>
-                            <p>“After we signed with APZKYC and integrated their tool, we
+                            <p>“After we signed with {consts.pageTitle} and integrated their tool, we
                                 managed to increase the speed of verification by more than 4
                                 times. Concurrently, the number of our clients increased by
                                 more than 3 times.”</p>
@@ -133,7 +135,7 @@ const Login = () => {
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                         <div className='login-bg'>
                             <div className='logo-bar'>
-                                <Link to="/"><img src={Logo} />
+                                <Link to="/"><img src={consts.projectLogo} />
                                 </Link>
                             </div>
                             <h1>Get started</h1>
