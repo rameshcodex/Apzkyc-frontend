@@ -84,7 +84,7 @@ const Header = () => {
                         <Grid container spacing={2} justifyContent={'space-between'} alignItems={"center"}>
                             <Grid item xs={12} sm={4} md={2} lg={2} xl={3} className='appbar-mobile'>
                                 <div className='logo-bar header-logo'>
-                                    <Link to="/"><img src={consts.projectLogo} width={"auto"} height={40} />
+                                    <Link to="/"><img src={consts.projectLogo} width={"auto"} height={100} />
                                     </Link>
 
                                 </div>
