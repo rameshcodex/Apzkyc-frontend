@@ -1,1 +1,119 @@
-name: Deploy React App to Server
+
+        name: Deploy React App to Server
+
+        on:
+          push:
+            branches: [apzkycclone]
+
+        jobs:
+          build-and-deploy:
+            runs-on: ubuntu-latest
+
+            steps:
+              - name: Checkout code
+                uses: actions/checkout@v3
+                with:
+                  ref: apzkycclone
+
+              - name: Connect to server and setup environment
+                uses: appleboy/ssh-action@v1.0.0
+                with:
+                  host: ${{ secrets.APZKYCCLONESERVER_HOST }}
+                  username: ${{ secrets.APZKYCCLONESERVER_USER }}
+                  key: ${{ secrets.APZKYCCLONESERVER_SSH_KEY }}
+                  script: |
+                    echo "🔍 Checking Docker..."
+                    if ! command -v docker >/dev/null 2>&1; then
+                      echo "🚧 Docker not found. Installing..."
+                      sudo apt update
+                      sudo apt install -y                         ca-certificates                         curl                         gnupg                         lsb-release
+                      sudo mkdir -p /etc/apt/keyrings
+                      curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+                      echo                         "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu                         $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+                      sudo apt update
+                      sudo apt install -y docker-ce docker-ce-cli containerd.io
+                      sudo usermod -aG docker $USER
+                      echo "✅ Docker installed."
+                    else
+                      echo "✅ Docker is already installed."
+                      docker --version
+                    fi
+
+                    echo "🔍 Checking Docker Compose..."
+                    if ! command -v docker-compose >/dev/null 2>&1; then
+                      echo "🚧 Docker Compose not found. Installing..."
+                      sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+                      sudo chmod +x /usr/local/bin/docker-compose
+                      echo "✅ Docker Compose installed."
+                    else
+                      echo "✅ Docker Compose is already installed."
+                      docker-compose --version
+                    fi
+
+                    echo "🔍 Checking if Docker network 'apzkycclone' exists..."
+                    if sudo docker network ls --format '{{.Name}}' | grep -wq "apzkycclone"; then
+                      echo "✅ Docker network 'apzkycclone' already exists."
+                    else
+                      echo "❌ Docker network 'apzkycclone' does NOT exist. Creating it now..."
+                      sudo docker network create apzkycclone
+                      echo "✅ Network 'apzkycclone' created."
+                    fi
+
+                    echo "📁 Creating project folder structure"
+                    mkdir -p ~/apzkycclone-frontend/{build,ssl,nginx}
+
+                    echo "📄 Writing docker-compose.yml"
+                    cat << 'EOF' > ~/apzkycclone-frontend/docker-compose.yml
+                    ${{ vars.APZKYCCLONEDOCKERCOMPOSERS }}
+                    EOF
+
+                    echo "📄 Writing Dockerfile"
+                    cat << 'EOF' > ~/apzkycclone-frontend/Dockerfile
+                    ${{ vars.APZKYCCLONEDOCKER }}
+                    EOF
+
+                    echo "📄 Writing template"
+                    cat << 'EOF' > ~/apzkycclone-frontend/template
+                    ${{ vars.APZKYCCLONETEMPLATE }}
+                    EOF
+
+              - name: Install Yarn
+                run: |
+                  npm install -g yarn
+
+              - name: Install dependencies
+                run: yarn
+
+              - name: Build React app
+                run: |
+                  export NODE_OPTIONS="--max-old-space-size=4096"
+                  CI=false yarn build
+
+              - name: List build folder for debug
+                run: ls -la build
+
+              - name: Copy build folder to server
+                uses: appleboy/scp-action@v0.1.7
+                with:
+                  host: ${{ secrets.APZKYCCLONESERVER_HOST }}
+                  username: ${{ secrets.APZKYCCLONESERVER_USER }}
+                  key: ${{ secrets.APZKYCCLONESERVER_SSH_KEY }}
+                  source: "build"
+                  target: "~/apzkycclone-frontend"
+
+              - name: Restart Docker containers
+                uses: appleboy/ssh-action@v1.0.0
+                with:
+                  host: ${{ secrets.APZKYCCLONESERVER_HOST }}
+                  username: ${{ secrets.APZKYCCLONESERVER_USER }}
+                  key: ${{ secrets.APZKYCCLONESERVER_SSH_KEY }}
+                  script: |
+                    cd ~/apzkycclone-frontend
+                    echo "🛑 Stopping containers..."
+                    sudo docker-compose -f docker-compose.yml down
+
+                    echo "🚀 Starting containers..."
+                    sudo docker-compose -f docker-compose.yml up --build -d
+
+                    echo "✅ Docker containers restarted."
+        
