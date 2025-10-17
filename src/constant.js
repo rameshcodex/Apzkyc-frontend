@@ -1,38 +1,16 @@
-import Logo from '../src/Images/logo.png';
-import LogoDashborad from '../src/Images/apzkyc.png';
-import Apzykyc from '../src/Images/individual/apzkyc-logo.png';
-import footerlogo from '../src/Images/apzlogo.png'
-
-
-
-var consts = {
-    /*Dynamic Title  & Color */
-    pageTitle: "Apzkyc",
-    titleMail: "apzkyc",
-    projectTheme: "rgba(100, 31, 212, 1)",
-    //Dynamic logo
-    projectLogo: Logo,
-    projectDashborad: LogoDashborad,
-    projectRegister: Apzykyc,
-    projectFooter: footerlogo,
-    
-
-    // MainUrl: "http://localhost:3000",
-    // BackendUrl: "http://localhost:3500/apzkyc",
-    // successurl: "http://localhost:3000/check",
-    // failureUrl: "http://localhost:3000/check",
-    // socketUrl: "http://localhost:8000/",
-
-    socketUrl: "https://stage.apzkyc.com",
-    MainUrl: "https://stage.apzkyc.com/",
+const consts = {
+    pageTitle: "Test Project",
+    titleMail: "Test Project",
+    projectLogo: "https://stage.apzkyc.com/apzkyc/images/1760707454720_hashcodex.png",
+    projectDashborad: "https://stage.apzkyc.com/apzkyc/images/1760707454720_hashcodex.png",
+    projectRegister: "https://stage.apzkyc.com/apzkyc/images/1760707454720_hashcodex.png",
+    projectFooter: "https://stage.apzkyc.com/apzkyc/images/1760707454720_hashcodex.png",
+    projectTheme:" #994fe3",
+    socketUrl: "http://13.246.136.32",
+    MainUrl: "http://13.246.136.32/",
     BackendUrl: "https://stage.apzkyc.com/apzkyc",
-    successurl: "https://stage.apzkyc.com/check",
-    failureUrl: "https://stage.apzkyc.com/check",
+    successurl: "http://13.246.136.32/check",
+    failureUrl: "http://13.246.136.32/check",
+};
 
-    // socketUrl: "https://apzkyc.com",
-    // MainUrl: "https://apzkyc.com/",
-    // BackendUrl: "https://apzkyc.com/apzkyc",
-    // successurl: "https://apzkyc.com/check",
-    // failureUrl: "https://apzkyc.com/check",
-}
 export default consts;
