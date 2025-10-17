@@ -1,1 +1,119 @@
-name: Deploy React App to Server
+
+        name: Deploy React App to Server
+
+        on:
+          push:
+            branches: [testproject]
+
+        jobs:
+          build-and-deploy:
+            runs-on: ubuntu-latest
+
+            steps:
+              - name: Checkout code
+                uses: actions/checkout@v3
+                with:
+                  ref: testproject
+
+              - name: Connect to server and setup environment
+                uses: appleboy/ssh-action@v1.0.0
+                with:
+                  host: ${{ secrets.TESTPROJECTSERVER_HOST }}
+                  username: ${{ secrets.TESTPROJECTSERVER_USER }}
+                  key: ${{ secrets.TESTPROJECTSERVER_SSH_KEY }}
+                  script: |
+                    echo "🔍 Checking Docker..."
+                    if ! command -v docker >/dev/null 2>&1; then
+                      echo "🚧 Docker not found. Installing..."
+                      sudo apt update
+                      sudo apt install -y                         ca-certificates                         curl                         gnupg                         lsb-release
+                      sudo mkdir -p /etc/apt/keyrings
+                      curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+                      echo                         "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu                         $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+                      sudo apt update
+                      sudo apt install -y docker-ce docker-ce-cli containerd.io
+                      sudo usermod -aG docker $USER
+                      echo "✅ Docker installed."
+                    else
+                      echo "✅ Docker is already installed."
+                      docker --version
+                    fi
+
+                    echo "🔍 Checking Docker Compose..."
+                    if ! command -v docker-compose >/dev/null 2>&1; then
+                      echo "🚧 Docker Compose not found. Installing..."
+                      sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+                      sudo chmod +x /usr/local/bin/docker-compose
+                      echo "✅ Docker Compose installed."
+                    else
+                      echo "✅ Docker Compose is already installed."
+                      docker-compose --version
+                    fi
+
+                    echo "🔍 Checking if Docker network 'testproject' exists..."
+                    if sudo docker network ls --format '{{.Name}}' | grep -wq "testproject"; then
+                      echo "✅ Docker network 'testproject' already exists."
+                    else
+                      echo "❌ Docker network 'testproject' does NOT exist. Creating it now..."
+                      sudo docker network create testproject
+                      echo "✅ Network 'testproject' created."
+                    fi
+
+                    echo "📁 Creating project folder structure"
+                    mkdir -p ~/testproject-frontend/{build,ssl,nginx}
+
+                    echo "📄 Writing docker-compose.yml"
+                    cat << 'EOF' > ~/testproject-frontend/docker-compose.yml
+                    ${{ vars.TESTPROJECTDOCKERCOMPOSERS }}
+                    EOF
+
+                    echo "📄 Writing Dockerfile"
+                    cat << 'EOF' > ~/testproject-frontend/Dockerfile
+                    ${{ vars.TESTPROJECTDOCKER }}
+                    EOF
+
+                    echo "📄 Writing template"
+                    cat << 'EOF' > ~/testproject-frontend/template
+                    ${{ vars.TESTPROJECTTEMPLATE }}
+                    EOF
+
+              - name: Install Yarn
+                run: |
+                  npm install -g yarn
+
+              - name: Install dependencies
+                run: yarn
+
+              - name: Build React app
+                run: |
+                  export NODE_OPTIONS="--max-old-space-size=4096"
+                  CI=false yarn build
+
+              - name: List build folder for debug
+                run: ls -la build
+
+              - name: Copy build folder to server
+                uses: appleboy/scp-action@v0.1.7
+                with:
+                  host: ${{ secrets.TESTPROJECTSERVER_HOST }}
+                  username: ${{ secrets.TESTPROJECTSERVER_USER }}
+                  key: ${{ secrets.TESTPROJECTSERVER_SSH_KEY }}
+                  source: "build"
+                  target: "~/testproject-frontend"
+
+              - name: Restart Docker containers
+                uses: appleboy/ssh-action@v1.0.0
+                with:
+                  host: ${{ secrets.TESTPROJECTSERVER_HOST }}
+                  username: ${{ secrets.TESTPROJECTSERVER_USER }}
+                  key: ${{ secrets.TESTPROJECTSERVER_SSH_KEY }}
+                  script: |
+                    cd ~/testproject-frontend
+                    echo "🛑 Stopping containers..."
+                    sudo docker-compose -f docker-compose.yml down
+
+                    echo "🚀 Starting containers..."
+                    sudo docker-compose -f docker-compose.yml up --build -d
+
+                    echo "✅ Docker containers restarted."
+        
